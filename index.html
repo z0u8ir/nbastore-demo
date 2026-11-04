@@ -1,0 +1,1367 @@
+<!DOCTYPE html>
+<html><head>
+<title>CraftoBotics Card Experience</title>
+<script>window.__resources = {"steel-los-angeles-lakers": "assets/steel-los-angeles-lakers.png", "steel-denver-nuggets": "assets/steel-denver-nuggets.png", "steel-golden-state-warriors": "assets/steel-golden-state-warriors.png", "steel-cleveland-cavaliers": "assets/steel-cleveland-cavaliers.png", "steel-memphis-grizzlies": "assets/steel-memphis-grizzlies.png", "steel-detroit-pistons": "assets/steel-detroit-pistons.png", "steel-houston-rockets": "assets/steel-houston-rockets.png", "steel-orlando-magic": "assets/steel-orlando-magic.png", "steel-oklahoma-city-thunder": "assets/steel-oklahoma-city-thunder.png", "steel-los-angeles-clippers": "assets/steel-los-angeles-clippers.png", "steel-miami-heat": "assets/steel-miami-heat.png", "steel-portland-trail-blazers": "assets/steel-portland-trail-blazers.png", "steel-philadelphia-76ers": "assets/steel-philadelphia-76ers.png", "steel-atlanta-hawks": "assets/steel-atlanta-hawks.png", "steel-dallas-mavericks": "assets/steel-dallas-mavericks.png", "steel-minnesota-timberwolves": "assets/steel-minnesota-timberwolves.png", "steel-toronto-raptors": "assets/steel-toronto-raptors.png", "steel-sacramento-kings": "assets/steel-sacramento-kings.png", "steel-charlotte-hornets": "assets/steel-charlotte-hornets.png", "steel-utah-jazz": "assets/steel-utah-jazz.png", "steel-san-antonio-spurs": "assets/steel-san-antonio-spurs.png", "steel-new-orleans-pelicans": "assets/steel-new-orleans-pelicans.png", "steel-phoenix-suns": "assets/steel-phoenix-suns.png", "steel-washington-wizards": "assets/steel-washington-wizards.png", "steel-milwaukee-bucks": "assets/steel-milwaukee-bucks.png", "steel-brooklyn-nets": "assets/steel-brooklyn-nets.png", "sig-steel-3": "assets/sig-steel-3.png", "sig-steel-2": "assets/sig-steel-2.png", "sig-steel-4": "assets/sig-steel-4.png", "sig-steel-1": "assets/sig-steel-1.png", "steel-bulls": "assets/steel-bulls.png", "steel-skyline-full": "assets/steel-skyline-full.png", "steel-knicks": "assets/steel-knicks.png", "steel-pacers": "assets/steel-pacers.png", "steel-nba-store-v2": "assets/steel-nba-store-v2.png", "steel-celtics": "assets/steel-celtics.png", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/react-dom.production.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/3a45b266-1f6d-48b3-832f-00a39931e828.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <style>/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/aba62ab3-2a0f-492f-a08f-f39cd8dd2f48.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/ca461956-c5ce-4802-bb6d-0d0b66ea4552.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/299e4c0b-c636-4199-a970-740d26b3c4ad.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a7d6b19a-0fc7-48be-ab0b-75205cf2d40c.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/9c3580be-f8a3-4eb1-ac59-a561eaf9566c.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/d1e9ccdd-bab6-4da1-b410-e3c283879cce.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/86f578e2-77ba-4d20-af46-00e1d83395a0.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/524b9089-1dc9-48f2-91c9-da5335e17617.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/43883af0-523d-4b79-8eec-650ff917e801.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0d173381-c15d-4d33-85ff-16ad0b313a80.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a711eb43-05fb-4037-ac80-7ee314b6d440.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/8133aded-bcd9-471c-ab7b-778bc3c3c34b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/86f578e2-77ba-4d20-af46-00e1d83395a0.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/524b9089-1dc9-48f2-91c9-da5335e17617.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/43883af0-523d-4b79-8eec-650ff917e801.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0d173381-c15d-4d33-85ff-16ad0b313a80.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a711eb43-05fb-4037-ac80-7ee314b6d440.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/8133aded-bcd9-471c-ab7b-778bc3c3c34b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/86f578e2-77ba-4d20-af46-00e1d83395a0.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/524b9089-1dc9-48f2-91c9-da5335e17617.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/43883af0-523d-4b79-8eec-650ff917e801.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0d173381-c15d-4d33-85ff-16ad0b313a80.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a711eb43-05fb-4037-ac80-7ee314b6d440.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/8133aded-bcd9-471c-ab7b-778bc3c3c34b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/86f578e2-77ba-4d20-af46-00e1d83395a0.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/524b9089-1dc9-48f2-91c9-da5335e17617.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/43883af0-523d-4b79-8eec-650ff917e801.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/0d173381-c15d-4d33-85ff-16ad0b313a80.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/a711eb43-05fb-4037-ac80-7ee314b6d440.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("assets/8133aded-bcd9-471c-ab7b-778bc3c3c34b.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/9726c63c-69c3-42e4-a38a-2c654f6f27f7.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/d949f871-0714-463d-b7de-fc5c88a940c3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/b48c4450-613e-4889-b1fe-e10cf127e67c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/9726c63c-69c3-42e4-a38a-2c654f6f27f7.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/d949f871-0714-463d-b7de-fc5c88a940c3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/b48c4450-613e-4889-b1fe-e10cf127e67c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/9726c63c-69c3-42e4-a38a-2c654f6f27f7.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/d949f871-0714-463d-b7de-fc5c88a940c3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/b48c4450-613e-4889-b1fe-e10cf127e67c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/9726c63c-69c3-42e4-a38a-2c654f6f27f7.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/d949f871-0714-463d-b7de-fc5c88a940c3.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/b48c4450-613e-4889-b1fe-e10cf127e67c.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+</style>
+  <script src="assets/85e1647a-98b2-432e-9a45-f5f5f582c8ce.js"></script>
+  <script src="assets/10c0feac-03bd-47c0-9277-7afc55e0f429.js"></script>
+  <script src="assets/0c99ed6a-bc74-44dd-83fe-3fd7cb8e6df4.js"></script>
+  <style>
+    body{margin:0;background:#1B1A17}
+    a{color:#D6A64F}a:hover{color:#A97A22}
+    button{font-family:'IBM Plex Sans',sans-serif;cursor:pointer;user-select:none;-webkit-user-select:none}
+    button *{user-select:none;-webkit-user-select:none}
+    button:hover{opacity:.85}
+    input,select{font-family:'IBM Plex Sans',sans-serif}
+  </style>
+</helmet>
+<div style="min-height:100vh;background:#1B1A17;color:#F4F1EA;display:flex;flex-direction:column;font-family:'IBM Plex Sans',sans-serif;box-sizing:border-box">
+
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;padding:14px 32px;border-bottom:1px solid rgba(214,166,79,.25)">
+    <div style="display:flex;align-items:center;gap:14px">
+      <sc-if value="{{ showBack }}" hint-placeholder-val="{{ false }}"><button sc-camel-on-click="{{ goBack }}" style="min-height:48px;padding:0 20px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:15px">Back</button></sc-if>
+      <button sc-camel-on-click="{{ goHome }}" style="background:none;border:0;padding:0;font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">{{ brand }}</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px">
+      <sc-if value="{{ showSteps }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:8px;align-items:center;font-size:13px;flex-wrap:wrap">
+        <sc-for list="{{ steps }}" as="st" hint-placeholder-count="4"><span style="padding:6px 12px;border-radius:2px;white-space:nowrap;background:{{ st.bg }};color:{{ st.fg }}">{{ st.label }}</span></sc-for>
+      </div></sc-if>
+      <button sc-camel-on-click="{{ goFlow }}" style="min-height:48px;padding:0 20px;background:{{ flowBg }};color:{{ flowFg }};border:1px solid rgba(214,166,79,.5);border-radius:3px;font-size:15px;font-weight:600">How it works</button><button sc-camel-on-click="{{ goColors }}" style="min-height:48px;padding:0 20px;background:{{ colorsBg }};color:{{ colorsFg }};border:1px solid rgba(214,166,79,.5);border-radius:3px;font-size:15px;font-weight:600">Color schemes</button><button sc-camel-on-click="{{ goSales }}" style="min-height:48px;padding:0 20px;background:{{ dashBg }};color:{{ dashFg }};border:1px solid rgba(214,166,79,.5);border-radius:3px;font-size:15px;font-weight:600">Sales dashboard</button>
+    </div>
+  </div>
+  <sc-if value="{{ showSalesNav }}" hint-placeholder-val="{{ false }}">
+  <div style="display:flex;gap:3px;padding:0 32px;background:rgba(180,172,157,.05);border-bottom:1px solid rgba(214,166,79,.25)">
+    <button sc-camel-on-click="{{ navItemsGo }}" style="flex:1;max-width:340px;min-height:64px;padding:8px 20px;display:grid;gap:2px;text-align:left;border:0;border-top:3px solid {{ navItemsLine }};background:{{ navItemsBg }};color:#F4F1EA"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Items settings</span><span style="font-size:12px;color:#c9c4b6">Teams, signatures, layout, calibration</span></button>
+    <button sc-camel-on-click="{{ navSalesGo }}" style="flex:1;max-width:340px;min-height:64px;padding:8px 20px;display:grid;gap:2px;text-align:left;border:0;border-top:3px solid {{ navSalesLine }};background:{{ navSalesBg }};color:#F4F1EA"><span style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Sales dashboard</span><span style="font-size:12px;color:#c9c4b6">Orders, charts, royalties</span></button>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <div style="flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:36px;padding:40px 32px;box-sizing:border-box">
+    <div style="text-align:center">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">CraftoBotics · NBA cards</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:48px;line-height:1.1;font-weight:700;margin:14px 0 0">Where are you starting?</h1>
+    </div>
+    <div style="display:flex;gap:16px;flex-wrap:wrap;justify-content:center;width:100%;max-width:980px">
+      <button sc-camel-on-click="{{ goStore }}" style="flex:1;min-width:300px;text-align:left;background:rgba(180,172,157,.08);border:0;border-top:3px solid #D6A64F;color:#F4F1EA;padding:32px 30px;display:grid;gap:12px;min-height:220px;align-content:start">
+        <span style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Online</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:700">NBA Store</span>
+        <span style="font-size:16px;font-weight:300;line-height:1.55;color:#c9c4b6">The CraftoBotics website. Choose your team, personalize your card, pay and get a QR code for the kiosk.</span>
+      </button>
+      <button sc-camel-on-click="{{ goKiosk }}" style="flex:1;min-width:300px;text-align:left;background:rgba(180,172,157,.08);border:0;border-top:3px solid #D6A64F;color:#F4F1EA;padding:32px 30px;display:grid;gap:12px;min-height:220px;align-content:start">
+        <span style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">On site</span>
+        <span style="font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:700">Kiosk</span>
+        <span style="font-size:16px;font-weight:300;line-height:1.55;color:#c9c4b6">The engraving machine. Scan your QR code, check your order and watch your card being engraved.</span>
+      </button>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isWelcome }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;display:flex;gap:40px 56px;align-items:center;justify-content:center;flex-wrap:wrap;padding:40px 24px">
+    <div style="max-width:560px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">{{ wEyebrow }}</div>
+      <h1 style="font-family:'Space Grotesk',sans-serif;font-size:64px;line-height:1.05;font-weight:700;margin:14px 0 0">Welcome</h1>
+      <p style="font-size:22px;font-weight:300;line-height:1.5;color:#c9c4b6;margin:20px 0 0">{{ wSub }}</p>
+      <button sc-camel-on-click="{{ start }}" style="margin-top:40px;min-height:72px;padding:0 56px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:26px">Start</button>
+    </div>
+    <div style="width:420px;max-width:100%;aspect-ratio:1.25;background:#000;border:11px solid #cfd2d4;border-radius:34px;box-sizing:border-box;display:flex;align-items:center;justify-content:center"><div style="width:76%;aspect-ratio:2.875;background:{{ storeBg }} center/contain no-repeat" role="img" aria-label="NBA Store"></div></div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isTeam }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;padding:32px 40px 48px;box-sizing:border-box">
+    <h2 style="font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;margin:0">Choose your team</h2>
+    <div style="display:flex;align-items:center;gap:12px;margin-top:20px;flex-wrap:wrap"><span style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Order by</span><div style="display:flex;border:1px solid rgba(244,241,234,.35);border-radius:3px;overflow:hidden"><button sc-camel-on-click="{{ sortColor }}" style="min-height:44px;padding:0 20px;border:0;font-size:14px;background:{{ sortColorBg }};color:{{ sortColorFg }}">Color</button><button sc-camel-on-click="{{ sortName }}" style="min-height:44px;padding:0 20px;border:0;font-size:14px;background:{{ sortNameBg }};color:{{ sortNameFg }}">Name</button></div></div>
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:20px">
+      <sc-for list="{{ filters }}" as="f" hint-placeholder-count="6"><button sc-camel-on-click="{{ f.pick }}" style="min-height:48px;padding:0 22px;border-radius:3px;border:1px solid rgba(244,241,234,.35);font-size:15px;background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button></sc-for>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:12px;margin-top:24px">
+      <sc-for list="{{ teamTiles }}" as="t" hint-placeholder-count="12"><button sc-camel-on-click="{{ t.pick }}" style="background:{{ t.color }};border:3px solid #cfd2d4;border-radius:14px;color:#fff;padding:20px 12px 16px;display:flex;flex-direction:column;align-items:center;gap:12px;min-height:180px;justify-content:space-between"><div style="width:100px;height:88px;background:{{ t.bgi }} center/contain no-repeat" role="img" aria-label="{{ t.name }}"></div><span style="font-size:14px;font-weight:600;text-align:center;line-height:1.3">{{ t.name }}</span></button></sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isScan }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;display:flex;gap:40px;flex-wrap:wrap;align-items:center;justify-content:center;padding:40px 32px;box-sizing:border-box">
+    <div style="max-width:560px;display:grid;gap:22px;flex:1;min-width:320px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Step 1</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:48px;line-height:1.1;font-weight:700;margin:0">Scan your QR code</h2>
+      <p style="font-size:18px;font-weight:300;line-height:1.5;color:#c9c4b6;margin:0">Hold the QR code from your order under the scanner. Your order opens automatically.</p>
+      <div style="display:flex;align-items:center;gap:14px;border-top:3px solid #D6A64F;background:rgba(180,172,157,.08);padding:18px 20px">
+        <div style="width:14px;height:14px;border-radius:50%;background:#D6A64F"></div>
+        <input id="scan-input" type="text" value="{{ scanText }}" sc-camel-on-input="{{ onScan }}" sc-camel-on-key-down="{{ onScanKey }}" sc-camel-on-blur="{{ refocus }}" placeholder="Waiting for scan…" autocomplete="off" style="flex:1;min-width:0;min-height:56px;padding:0 16px;font-size:22px;font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px">
+        <button sc-camel-on-click="{{ scanGo }}" style="min-height:56px;padding:0 24px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-weight:600;font-size:16px">Open</button>
+      </div>
+      <sc-if value="{{ hasScanErr }}" hint-placeholder-val="{{ false }}"><div style="font-size:16px;color:#F4F1EA;border-left:3px solid #D6A64F;padding:10px 14px;background:rgba(214,166,79,.14)">{{ scanErr }}</div></sc-if>
+    </div>
+    
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isCards }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;display:flex;gap:44px;flex-wrap:wrap;justify-content:center;align-items:flex-start;padding:28px 32px 48px;box-sizing:border-box">
+
+    <div style="display:{{ cardsDisplay }};gap:24px;flex-wrap:wrap;justify-content:center">
+      <div>
+        <div style="width:240px;height:371px;background:{{ c.body }};border:11px solid #cfd2d4;border-radius:34px;position:relative;box-sizing:border-box;overflow:hidden">
+          <div style="position:absolute;top:17px;left:50%;transform:translateX(-50%);width:19px;height:19px;border-radius:50%;border:4px solid #cfd2d4;box-sizing:border-box;background:{{ c.holeBg }}"></div>
+          <div style="position:absolute;left:50%;transform:translateX(-50%);top:{{ c.logoTop }};width:{{ c.logoW }};height:{{ c.logoH }};background:{{ c.logoBgi }} center/contain no-repeat" role="img" aria-label="Team logo"></div>
+          <sc-if value="{{ c.isName }}" hint-placeholder-val="{{ true }}"><div style="position:absolute;left:0;right:0;bottom:{{ c.nameBottom }};text-align:center;white-space:nowrap;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:{{ c.nameFont }};letter-spacing:.06em;background:linear-gradient(180deg,#f4f6f8 0%,#aeb4bb 48%,#e3e6e9 100%);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 1px 0 rgba(0,0,0,.35));opacity:{{ c.nameOpacity }}">{{ c.nameShown }}</div></sc-if>
+          <sc-if value="{{ c.isSig }}" hint-placeholder-val="{{ false }}"><div style="position:absolute;left:50%;transform:translateX(-50%);bottom:{{ c.sigBottom }};width:{{ c.sigW }};aspect-ratio:{{ c.sigAr }};background-image:var(--nbk-sig);background-size:contain;background-position:center;background-repeat:no-repeat" role="img" aria-label="Signature"></div></sc-if>
+        </div>
+        <div style="font-size:13px;color:#c9c4b6;text-align:center;margin-top:10px">Front</div>
+      </div>
+      <div>
+        <div style="width:240px;height:371px;background:{{ c.body }};border:11px solid #cfd2d4;border-radius:34px;position:relative;box-sizing:border-box;overflow:hidden">
+          <div style="position:absolute;top:17px;left:50%;transform:translateX(-50%);width:19px;height:19px;border-radius:50%;border:4px solid #cfd2d4;box-sizing:border-box;background:{{ c.holeBg }}"></div>
+          <div style="position:absolute;left:50%;transform:translateX(-50%);top:{{ c.storeTop }};width:64%;aspect-ratio:2.875;background:{{ storeBg }} center/contain no-repeat" role="img" aria-label="NBA Store"></div>
+          <div style="position:absolute;left:-1px;bottom:-1px;width:calc(100% + 2px);aspect-ratio:1328/544;background:{{ skyBg }} center/100% 100% no-repeat" role="img" aria-label="Skyline"></div>
+        </div>
+        <div style="font-size:13px;color:#c9c4b6;text-align:center;margin-top:10px">Back</div>
+      </div>
+    </div>
+
+    <sc-if value="{{ isPers }}" hint-placeholder-val="{{ false }}">
+    <div style="flex:1;min-width:340px;max-width:560px;display:grid;gap:20px">
+      <div style="display:flex;align-items:center;gap:16px;border-top:3px solid #D6A64F;background:rgba(180,172,157,.08);padding:14px 18px">
+        <div style="width:56px;height:56px;background:{{ c.logoBgi }} center/contain no-repeat" role="img" aria-label="Team logo"></div>
+        <div style="flex:1"><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px">{{ teamName }}</div><div style="font-size:13px;color:#c9c4b6">{{ famLabel }}</div></div>
+        <button sc-camel-on-click="{{ changeTeam }}" style="min-height:48px;padding:0 18px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:14px">Change team</button>
+      </div>
+      <div>
+        <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F;margin-bottom:10px">Card</div>
+        <div style="display:flex">
+          <button sc-camel-on-click="{{ pickColor }}" style="flex:1;min-height:56px;border:1px solid #D6A64F;border-radius:3px 0 0 3px;font-size:16px;font-weight:600;background:{{ cColorBg }};color:{{ cColorFg }}">Team color</button>
+          <button sc-camel-on-click="{{ pickBlack }}" style="flex:1;min-height:56px;border:1px solid #D6A64F;border-radius:0 3px 3px 0;margin-left:-1px;font-size:16px;font-weight:600;background:{{ cBlackBg }};color:{{ cBlackFg }}">Black</button>
+        </div>
+      </div>
+      <div>
+        <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F;margin-bottom:10px">Engrave</div>
+        <div style="display:flex">
+          <button sc-camel-on-click="{{ pickName }}" style="flex:1;min-height:56px;border:1px solid #D6A64F;border-radius:3px 0 0 3px;font-size:16px;font-weight:600;background:{{ mNameBg }};color:{{ mNameFg }}">My name</button>
+          <button sc-camel-on-click="{{ pickSig }}" style="flex:1;min-height:56px;border:1px solid #D6A64F;border-radius:0 3px 3px 0;margin-left:-1px;font-size:16px;font-weight:600;background:{{ mSigBg }};color:{{ mSigFg }}">Player signature</button>
+        </div>
+      </div>
+      <sc-if value="{{ c.isName }}" hint-placeholder-val="{{ true }}">
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#c9c4b6;margin-bottom:8px"><span>Your name</span><span>{{ nameCount }}</span></div>
+        <input type="text" value="{{ name }}" maxlength="{{ maxChars }}" sc-camel-on-input="{{ onName }}" placeholder="Type your name" style="width:100%;box-sizing:border-box;min-height:64px;padding:0 18px;font-size:26px;font-family:'Space Grotesk',sans-serif;font-weight:600;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;text-transform:uppercase">
+      </div>
+      </sc-if>
+      <sc-if value="{{ c.isSig }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="font-size:13px;color:#c9c4b6;margin-bottom:8px">Choose a signature</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:3px">
+          <sc-for list="{{ sigOpts }}" as="s" hint-placeholder-count="4"><button sc-camel-on-click="{{ s.pick }}" style="background:{{ s.bg }};border:0;border-top:3px solid {{ s.line }};padding:12px 8px 10px;min-height:92px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#F4F1EA"><div style="width:130px;height:54px;background:{{ s.bgi }} center/contain no-repeat" role="img" aria-label="{{ s.label }}"></div><span style="font-size:12px">{{ s.label }}</span></button></sc-for>
+        </div>
+      </div>
+      </sc-if>
+      <button sc-camel-on-click="{{ goPay }}" style="min-height:72px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;opacity:{{ goOpacity }}">Continue to payment · {{ priceLabel }}</button>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isPay }}" hint-placeholder-val="{{ false }}">
+    <div style="flex:1;min-width:340px;max-width:560px;display:grid;gap:20px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Payment</div>
+      <div style="border-top:3px solid #D6A64F;background:rgba(180,172,157,.08);padding:16px 18px;display:grid;gap:8px;font-size:15px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Team</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ teamName }}</b></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Card</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ cardLabel }}</b></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Engraving</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ engraveLabel }}</b></div>
+        <div style="display:flex;justify-content:space-between;gap:12px;border-top:1px solid rgba(244,241,234,.2);padding-top:10px;margin-top:4px;font-size:18px"><span>Total</span><b style="font-family:'Space Grotesk',sans-serif;color:#D6A64F">{{ priceLabel }}</b></div>
+      </div>
+      <div style="display:grid;gap:12px">
+        <label style="display:grid;gap:6px;font-size:13px;color:#c9c4b6">Cardholder name<input type="text" data-f="name" value="{{ payName }}" sc-camel-on-input="{{ onPay }}" style="min-height:52px;padding:0 14px;font-size:18px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"></label>
+        <label style="display:grid;gap:6px;font-size:13px;color:#c9c4b6">Card number<input type="text" data-f="num" value="{{ payNum }}" sc-camel-on-input="{{ onPay }}" style="min-height:52px;padding:0 14px;font-size:18px;letter-spacing:.08em;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"></label>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <label style="display:grid;gap:6px;font-size:13px;color:#c9c4b6">Expiry<input type="text" data-f="exp" value="{{ payExp }}" sc-camel-on-input="{{ onPay }}" style="min-height:52px;padding:0 14px;font-size:18px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label>
+          <label style="display:grid;gap:6px;font-size:13px;color:#c9c4b6">CVC<input type="text" data-f="cvc" value="{{ payCvc }}" sc-camel-on-input="{{ onPay }}" style="min-height:52px;padding:0 14px;font-size:18px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label>
+        </div>
+        <div style="font-size:12px;color:#c9c4b6">{{ payNote }}</div>
+      </div>
+      <button sc-camel-on-click="{{ pay }}" style="min-height:72px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;opacity:{{ payOpacity }}">{{ payLabel }}</button>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isQr }}" hint-placeholder-val="{{ false }}">
+    <div style="flex:1;min-width:340px;max-width:520px;display:grid;gap:18px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Order confirmed</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:40px;line-height:1.1;font-weight:700;margin:0">Show this code at the kiosk</h2>
+      <div style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <div style="width:240px;height:240px;background:#fff;border:6px solid #fff;box-sizing:border-box;display:flex;align-items:center;justify-content:center;text-align:center;font-size:13px;color:#1B1A17"><div style="width:100%;height:100%;background:{{ qrBgi }} center/contain no-repeat" role="img" aria-label="Order QR code"></div></div>
+        <div style="display:grid;gap:6px">
+          <div style="font-size:13px;color:#c9c4b6">Order number</div>
+          <div style="font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;letter-spacing:.08em">{{ orderId }}</div>
+          <div style="font-size:14px;color:#c9c4b6;line-height:1.5">{{ orderSummary }}</div>
+          <a href="{{ qrHref }}" download="{{ qrName }}" style="font-size:14px">Download QR code</a>
+        </div>
+      </div>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button sc-camel-on-click="{{ toKiosk }}" style="flex:1;min-height:64px;padding:0 20px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:20px">Go to kiosk</button>
+        <button sc-camel-on-click="{{ newOrder }}" style="flex:1;min-height:64px;padding:0 20px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:18px">New order</button>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isVal }}" hint-placeholder-val="{{ false }}">
+    <div style="flex:1;min-width:340px;max-width:560px;display:grid;gap:20px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Step 2 · Check your order</div>
+      <div style="border-top:3px solid #D6A64F;background:rgba(180,172,157,.08);padding:16px 18px;display:grid;gap:8px;font-size:15px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Order</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal;letter-spacing:.08em">{{ kId }}</b></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Team</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ teamName }}</b></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Card</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ cardLabel }}</b></div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:16px"><span style="color:#c9c4b6;flex:none">Engraving</span><b style="flex:1;min-width:0;text-align:right;line-height:1.35;white-space:normal;word-break:normal">{{ engraveLabel }}</b></div>
+      </div>
+      <sc-if value="{{ kEditName }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="display:flex;justify-content:space-between;font-size:13px;color:#c9c4b6;margin-bottom:8px"><span>Name to engrave. Fix it here if there is a mistake.</span><span>{{ kNameCount }}</span></div>
+        <input type="text" value="{{ kName }}" maxlength="{{ maxChars }}" sc-camel-on-input="{{ onKName }}" placeholder="Type your name" style="width:100%;box-sizing:border-box;min-height:64px;padding:0 18px;font-size:26px;font-family:'Space Grotesk',sans-serif;font-weight:600;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;text-transform:uppercase">
+      </div>
+      </sc-if>
+      <sc-if value="{{ kEditSig }}" hint-placeholder-val="{{ false }}">
+      <div>
+        <div style="font-size:13px;color:#c9c4b6;margin-bottom:8px">Signature to engrave. Pick another one if needed.</div>
+        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:3px">
+          <sc-for list="{{ kSigOpts }}" as="s" hint-placeholder-count="4"><button sc-camel-on-click="{{ s.pick }}" style="background:{{ s.bg }};border:0;border-top:3px solid {{ s.line }};padding:12px 8px 10px;min-height:92px;display:flex;flex-direction:column;align-items:center;gap:6px;color:#F4F1EA"><div style="width:130px;height:54px;background:{{ s.bgi }} center/contain no-repeat" role="img" aria-label="{{ s.label }}"></div><span style="font-size:12px">{{ s.label }}</span></button></sc-for>
+        </div>
+      </div>
+      </sc-if>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <button sc-camel-on-click="{{ confirmEngrave }}" style="flex:2;min-width:220px;min-height:72px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px;opacity:{{ kOpacity }}">Confirm and engrave</button>
+        <button sc-camel-on-click="{{ cancelOrder }}" style="flex:1;min-height:72px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:18px">Cancel</button>
+        <button sc-camel-on-click="{{ toggleKEdit }}" style="flex:1;min-height:72px;border:1px solid #D6A64F;border-radius:3px;font-size:18px;background:{{ kEditBg }};color:{{ kEditFg }}">{{ kEditLabel }}</button>
+      </div>
+    </div>
+    </sc-if>
+
+    <sc-if value="{{ isEngrave }}" hint-placeholder-val="{{ false }}">
+    <div style="flex:1;min-width:340px;max-width:520px;display:grid;gap:22px;align-content:center;min-height:371px">
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">{{ stepLabel }}</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:44px;line-height:1.1;font-weight:700;margin:0">{{ headline }}</h2>
+      <p style="font-size:18px;font-weight:300;line-height:1.5;color:#c9c4b6;margin:0">{{ sub }}</p>
+      <div style="height:10px;background:rgba(244,241,234,.12);border-radius:2px;overflow:hidden"><div style="height:100%;width:{{ pct }}%;background:#D6A64F"></div></div>
+      <sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}"><button sc-camel-on-click="{{ restartKiosk }}" style="min-height:72px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:24px">Start over</button></sc-if>
+    </div>
+    </sc-if>
+
+    
+
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isFlow }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;width:100%;max-width:1100px;margin:0 auto;padding:32px 32px 56px;box-sizing:border-box;display:grid;gap:22px;align-content:start">
+    <div><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Workflow</div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;margin:8px 0 0">How it works</h2></div>
+    <div style="display:grid;gap:12px"><div><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">1 · Online store</div><div style="font-size:13px;color:#c9c4b6;margin-top:4px">The customer orders from the NBA Store website.</div></div><div style="display:flex;gap:8px;align-items:stretch"><div style="flex:1;min-width:0;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">1</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Choose team</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">Pick one of the 30 teams and a team color or black card.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">2</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Personalize</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">Engrave a name or choose a player signature.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">3</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Pay</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">Checkout with a simulated payment.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">4</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Get the QR code</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">The order is saved and a QR code with the order number is shown.</div></div></div></div>
+    <div style="display:flex;align-items:center;gap:14px;padding-left:24px"><svg width="18" height="40" sc-camel-view-box="0 0 18 40" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M9 2v34M2 28l7 8 7-8"></path></svg><div style="font-size:14px;color:#F4F1EA"><b>QR code</b> <span style="color:#c9c4b6">carries the order number from the store to the kiosk</span></div></div>
+    <div style="display:grid;gap:12px"><div><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">2 · Kiosk</div><div style="font-size:13px;color:#c9c4b6;margin-top:4px">On site, next to the robot.</div></div><div style="display:flex;gap:8px;align-items:stretch"><div style="flex:1;min-width:0;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">5</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Scan</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">The customer scans the QR code or types the order number.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">6</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Check or edit</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">The order loads with team, card and engraving. The name or the signature can be corrected.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">7</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Engrave</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">After confirmation the robot engraves the card, front and back.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">8</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Take the card</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">The order is marked as engraved.</div></div></div></div>
+    <div style="display:flex;align-items:center;gap:14px;padding-left:24px"><svg width="18" height="40" sc-camel-view-box="0 0 18 40" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="flex:none"><path d="M9 2v34M2 28l7 8 7-8"></path></svg><div style="font-size:14px;color:#F4F1EA"><b>Order status</b> <span style="color:#c9c4b6">paid, then engraved, is recorded for every order</span></div></div>
+    <div style="display:grid;gap:12px"><div><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">3 · Sales dashboard</div><div style="font-size:13px;color:#c9c4b6;margin-top:4px">For the operator.</div></div><div style="display:flex;gap:8px;align-items:stretch"><div style="flex:1;min-width:0;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">9</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Track sales</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">Orders, revenue, best days and hours, and sales by team and by player signature.</div></div><svg width="30" height="18" sc-camel-view-box="0 0 44 18" style="align-self:center" fill="none" stroke="#D6A64F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 9h38M32 2l8 7-8 7"></path></svg><div style="flex:1;min-width:150px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 16px 18px;display:grid;gap:8px;align-content:start"><span style="width:28px;height:28px;border-radius:50%;background:#D6A64F;color:#1B1A17;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:14px">10</span><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:19px">Royalties</div><div style="font-size:13px;line-height:1.45;color:#c9c4b6">Royalties per team and per player are calculated on engraved cards and exported to CSV or XLSX.</div></div></div></div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isColors }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;width:100%;max-width:1100px;margin:0 auto;padding:32px 32px 56px;box-sizing:border-box;display:grid;gap:22px;align-content:start">
+    <div><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Card colors</div><h2 style="font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;margin:6px 0 0">Color schemes</h2><p style="font-size:15px;line-height:1.6;color:#c9c4b6;margin:8px 0 0;max-width:640px">Every team uses the card color of its family. The black card is the same for all teams.</p></div>
+    <div style="display:grid;gap:3px">
+      <sc-for list="{{ colorFams }}" as="f" hint-placeholder-count="7">
+      <div style="display:grid;grid-template-columns:minmax(200px,260px) minmax(0,1fr);gap:20px;padding:16px 18px;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;align-items:start">
+        <div style="display:grid;gap:8px;align-content:start"><div style="width:100%;max-width:200px;height:56px;border-radius:3px;background:{{ f.hex }};border:1px solid rgba(244,241,234,.25)"></div><div style="font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:22px">{{ f.name }}</div><div style="font-size:13px;line-height:1.5;color:#c9c4b6">HEX <b style="color:#F4F1EA">{{ f.hex }}</b><br>RGB <b style="color:#F4F1EA">{{ f.rgb }}</b><br>Reference: {{ f.ref }}</div></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:6px;align-content:start"><sc-for list="{{ f.teams }}" as="t" hint-placeholder-count="4"><div style="display:flex;align-items:center;gap:10px;padding:6px 10px;background:{{ f.hex }};color:#fff;border-radius:3px;font-size:13px;font-weight:600;border:1px solid rgba(244,241,234,.3);min-height:44px"><div style="width:30px;height:30px;flex:none;background:{{ t.bgi }} center/contain no-repeat"></div><span>{{ t.name }}</span></div></sc-for></div>
+      </div>
+      </sc-for>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isSalesScreen }}" hint-placeholder-val="{{ false }}">
+  <div style="flex:1;width:100%;max-width:1100px;margin:0 auto;padding:32px 32px 56px;box-sizing:border-box;display:grid;gap:24px;align-content:start">
+    <div>
+      <div style="font-weight:600;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Dashboard</div>
+      <h2 style="font-family:'Space Grotesk',sans-serif;font-size:40px;font-weight:700;margin:8px 0 0">Sales</h2>
+    </div>
+      <div style="display:grid;gap:22px">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end;background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:14px 18px"><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">From<input type="date" value="{{ dpFrom }}" sc-camel-on-input="{{ onDpFrom }}" style="min-height:40px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">To<input type="date" value="{{ dpTo }}" sc-camel-on-input="{{ onDpTo }}" style="min-height:40px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label><sc-for list="{{ dpPresets }}" as="p" hint-placeholder-count="6"><button sc-camel-on-click="{{ p.pick }}" style="min-height:40px;padding:0 14px;border:1px solid {{ p.line }};border-radius:3px;font-size:13px;background:{{ p.bg }};color:{{ p.fg }}">{{ p.label }}</button></sc-for></div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:3px">
+          <sc-for list="{{ kpis }}" as="k" hint-placeholder-count="4"><div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:18px 20px;display:grid;grid-template-rows:auto auto 1fr;gap:8px;min-width:0;min-height:128px;overflow:hidden;box-sizing:border-box"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ k.label }}</div><div style="font-family:'Space Grotesk',sans-serif;font-size:30px;font-weight:700;line-height:1.1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ k.value }}</div><div style="font-size:12px;line-height:1.4;color:#c9c4b6;align-self:end">{{ k.sub }}</div></div></sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:3px">
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:12px;align-content:start"><div style="display:flex;justify-content:space-between;align-items:center;gap:8px;flex-wrap:wrap"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">{{ dayTitle }}</div><div style="display:flex;gap:4px"><sc-for list="{{ rangeOpts }}" as="r" hint-placeholder-count="4"><button sc-camel-on-click="{{ r.pick }}" style="min-height:28px;padding:0 10px;border:1px solid #D6A64F;border-radius:3px;font-size:12px;background:{{ r.bg }};color:{{ r.fg }}">{{ r.label }}</button></sc-for></div></div><div style="display:flex;gap:2px;align-items:flex-end;height:130px"><sc-for list="{{ dayBars }}" as="b" hint-placeholder-count="7"><div title="{{ b.tip }}" style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px"><span style="font-size:10px;color:#c9c4b6;line-height:1">{{ b.n }}</span><div style="width:100%;height:{{ b.px }}px;background:{{ b.c }}"></div></div></sc-for></div><div style="display:flex;gap:2px"><sc-for list="{{ dayBars }}" as="b" hint-placeholder-count="7"><span style="flex:1;min-width:0;text-align:center;font-size:10px;color:#8a8578;white-space:nowrap">{{ b.label }}</span></sc-for></div></div>
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:12px;align-content:start"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Sales by hour of day</div><div style="display:flex;gap:2px;align-items:flex-end;height:130px"><sc-for list="{{ hourBars }}" as="b" hint-placeholder-count="7"><div title="{{ b.tip }}" style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px"><span style="font-size:10px;color:#c9c4b6;line-height:1">{{ b.n }}</span><div style="width:100%;height:{{ b.px }}px;background:{{ b.c }}"></div></div></sc-for></div><div style="display:flex;gap:2px"><sc-for list="{{ hourBars }}" as="b" hint-placeholder-count="7"><span style="flex:1;min-width:0;text-align:center;font-size:10px;color:#8a8578;white-space:nowrap">{{ b.label }}</span></sc-for></div></div>
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:12px;align-content:start"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Sales by weekday</div><div style="display:flex;gap:6px;align-items:flex-end;height:130px"><sc-for list="{{ wdBars }}" as="b" hint-placeholder-count="7"><div title="{{ b.tip }}" style="flex:1;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;gap:4px"><span style="font-size:10px;color:#c9c4b6;line-height:1">{{ b.n }}</span><div style="width:100%;height:{{ b.px }}px;background:{{ b.c }}"></div></div></sc-for></div><div style="display:flex;gap:6px"><sc-for list="{{ wdBars }}" as="b" hint-placeholder-count="7"><span style="flex:1;min-width:0;text-align:center;font-size:10px;color:#8a8578;white-space:nowrap">{{ b.label }}</span></sc-for></div></div>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:3px">
+          <sc-for list="{{ donuts }}" as="d" hint-placeholder-count="3"><div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:12px;align-content:start;justify-items:center"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F;justify-self:start">{{ d.title }}</div><div style="width:130px;height:130px;border-radius:50%;background:{{ d.grad }};display:flex;align-items:center;justify-content:center"><div style="width:84px;height:84px;border-radius:50%;background:#1F1E1A;display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk',sans-serif;font-size:20px;font-weight:700">{{ d.center }}</div></div><div style="display:grid;gap:6px;width:100%"><sc-for list="{{ d.legend }}" as="l" hint-placeholder-count="2"><div style="display:flex;align-items:center;gap:8px;font-size:13px"><span style="width:12px;height:12px;background:{{ l.color }};flex:none"></span><span style="flex:1">{{ l.label }}</span><b>{{ l.n }}</b><span style="color:#8a8578;width:38px;text-align:right">{{ l.pct }}</span></div></sc-for></div></div></sc-for>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:3px">
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:10px;align-content:start">
+            <div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Sales by team</div>
+            <sc-if value="{{ noSales }}" hint-placeholder-val="{{ true }}"><div style="font-size:13px;color:#c9c4b6">No sales yet.</div></sc-if>
+            <sc-for list="{{ teamBars }}" as="b" hint-placeholder-count="4"><div style="display:grid;gap:4px"><div style="display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:13px"><span>{{ b.label }}</span><span style="display:flex;align-items:center;gap:8px"><b>{{ b.n }}</b><button sc-camel-on-click="{{ b.csv }}" title="Download CSV for the selected period" style="min-height:28px;padding:0 8px;background:transparent;color:#D6A64F;border:1px solid rgba(214,166,79,.6);border-radius:3px;font-size:11px;letter-spacing:.08em">CSV</button></span></div><div style="height:6px;background:rgba(244,241,234,.12)"><div style="height:100%;width:{{ b.pct }}%;background:#D6A64F"></div></div></div></sc-for>
+          </div>
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:10px;align-content:start">
+            <div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Top signatures</div>
+            <sc-if value="{{ noSigs }}" hint-placeholder-val="{{ true }}"><div style="font-size:13px;color:#c9c4b6">No signature sales yet.</div></sc-if>
+            <sc-for list="{{ sigBars }}" as="b" hint-placeholder-count="4"><div style="display:grid;gap:4px"><div style="display:flex;justify-content:space-between;gap:10px;font-size:13px"><span>{{ b.label }} <span style="color:#c9c4b6">· {{ b.sub }}</span></span><span style="display:flex;align-items:center;gap:8px"><b>{{ b.n }}</b><button sc-camel-on-click="{{ b.csv }}" title="Download CSV for the selected period" style="min-height:28px;padding:0 8px;background:transparent;color:#D6A64F;border:1px solid rgba(214,166,79,.6);border-radius:3px;font-size:11px;letter-spacing:.08em">CSV</button></span></div><div style="height:6px;background:rgba(244,241,234,.12)"><div style="height:100%;width:{{ b.pct }}%;background:#D6A64F"></div></div></div></sc-for>
+          </div>
+        </div>
+        <div style="display:grid;gap:12px">
+          <div style="background:rgba(180,172,157,.08);border-top:3px solid #D6A64F;padding:16px 18px;display:grid;gap:14px;align-content:start"><div style="font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#D6A64F">Royalty reports</div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:flex-end"><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">From<input type="date" value="{{ pFrom }}" sc-camel-on-input="{{ onFrom }}" style="min-height:40px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">To<input type="date" value="{{ pTo }}" sc-camel-on-input="{{ onTo }}" style="min-height:40px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"></label><button sc-camel-on-click="{{ perThis }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">This month</button><button sc-camel-on-click="{{ perLast }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Last month</button><button sc-camel-on-click="{{ per14 }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Last 14 days</button></div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:3px"><div style="background:rgba(244,241,234,.06);padding:12px 14px;display:grid;gap:2px"><span style="font-size:12px;color:#c9c4b6">Owed to teams</span><b style="font-family:'Space Grotesk',sans-serif;font-size:24px">{{ owedTeams }}</b><span style="font-size:12px;color:#8a8578">{{ owedTeamsSub }}</span></div><div style="background:rgba(244,241,234,.06);padding:12px 14px;display:grid;gap:2px"><span style="font-size:12px;color:#c9c4b6">Owed to players</span><b style="font-family:'Space Grotesk',sans-serif;font-size:24px">{{ owedPlayers }}</b><span style="font-size:12px;color:#8a8578">{{ owedPlayersSub }}</span></div></div>
+            <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:flex-end"><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">Default rate, players<span style="display:flex;gap:4px"><sc-raw-select value="{{ pDk }}" sc-camel-on-change="{{ pOnDk }}" style="min-height:40px;padding:0 6px;font-size:13px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"><option value="pct">%</option><option value="flat">Flat</option></sc-raw-select><input type="number" min="0" step="0.01" value="{{ pDv }}" sc-camel-on-input="{{ pOnDv }}" style="min-height:40px;width:84px;padding:0 8px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"></span></label><label style="display:grid;gap:4px;font-size:12px;color:#c9c4b6">Default rate, teams<span style="display:flex;gap:4px"><sc-raw-select value="{{ tDk }}" sc-camel-on-change="{{ tOnDk }}" style="min-height:40px;padding:0 6px;font-size:13px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"><option value="pct">%</option><option value="flat">Flat</option></sc-raw-select><input type="number" min="0" step="0.01" value="{{ tDv }}" sc-camel-on-input="{{ tOnDv }}" style="min-height:40px;width:84px;padding:0 8px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px"></span></label><span style="font-size:12px;color:#8a8578;padding-bottom:12px">Applies to anyone without their own rate.</span></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap"><button sc-camel-on-click="{{ xTeams }}" style="min-height:44px;padding:0 18px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-size:14px;font-weight:600">Teams XLSX</button><button sc-camel-on-click="{{ xPlayers }}" style="min-height:44px;padding:0 18px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-size:14px;font-weight:600">Players XLSX</button></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><sc-raw-select value="{{ expT }}" sc-camel-on-change="{{ onExpT }}" style="min-height:44px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;flex:1;min-width:200px"><sc-for list="{{ expTOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o.v }}">{{ o.l }}</option></sc-for></sc-raw-select><button sc-camel-on-click="{{ exportT }}" style="min-height:44px;padding:0 18px;background:transparent;color:#F4F1EA;border:1px solid #D6A64F;border-radius:3px;font-size:14px;opacity:{{ expTOp }}">Download team CSV</button></div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;align-items:center"><sc-raw-select value="{{ expP }}" sc-camel-on-change="{{ onExpP }}" style="min-height:44px;padding:0 10px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;flex:1;min-width:200px"><sc-for list="{{ expPOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o.v }}">{{ o.l }}</option></sc-for></sc-raw-select><button sc-camel-on-click="{{ exportP }}" style="min-height:44px;padding:0 18px;background:transparent;color:#F4F1EA;border:1px solid #D6A64F;border-radius:3px;font-size:14px;opacity:{{ expPOp }}">Download player CSV</button></div>
+            <div style="font-size:12px;color:#8a8578;line-height:1.5">Royalties count engraved cards only. Each XLSX has a Summary sheet and one sheet per team or player with the orders and the total for the period. Royalty rates are set in Admin, Teams and Signatures. Team royalties apply to every sale of that team, player royalties to sales with that player's signature. A flat rate is paid per sale.</div></div>
+          
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6">Type</span><sc-for list="{{ typeFilters }}" as="f" hint-placeholder-count="3"><button sc-camel-on-click="{{ f.pick }}" style="min-height:36px;padding:0 14px;border:1px solid #D6A64F;border-radius:3px;font-size:13px;background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button></sc-for><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6;margin-left:8px">Card</span><sc-for list="{{ cardFilters }}" as="f" hint-placeholder-count="3"><button sc-camel-on-click="{{ f.pick }}" style="min-height:36px;padding:0 14px;border:1px solid #D6A64F;border-radius:3px;font-size:13px;background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button></sc-for></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center"><sc-raw-select value="{{ salesTeam }}" sc-camel-on-change="{{ onSalesTeam }}" style="min-height:36px;padding:0 10px;font-size:13px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0;max-width:220px"><sc-for list="{{ salesTeamOpts }}" as="o" hint-placeholder-count="3"><option value="{{ o.v }}">{{ o.l }}</option></sc-for></sc-raw-select><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6">From</span><input type="date" value="{{ salesFrom }}" sc-camel-on-input="{{ onSalesFrom }}" style="min-height:36px;padding:0 10px;font-size:13px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6">To</span><input type="date" value="{{ salesTo }}" sc-camel-on-input="{{ onSalesTo }}" style="min-height:36px;padding:0 10px;font-size:13px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px;min-width:0"><button sc-camel-on-click="{{ resetFilters }}" style="min-height:36px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Reset filters</button></div>
+          <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;background:rgba(180,172,157,.08);padding:8px 12px"><span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6">Export columns</span><sc-for list="{{ colChips }}" as="c2" hint-placeholder-count="9"><button sc-camel-on-click="{{ c2.pick }}" style="min-height:30px;padding:0 10px;border:1px solid #D6A64F;border-radius:3px;font-size:12px;background:{{ c2.bg }};color:{{ c2.fg }}">{{ c2.label }}</button></sc-for></div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+            <sc-for list="{{ salesFilters }}" as="f" hint-placeholder-count="3"><button sc-camel-on-click="{{ f.pick }}" style="min-height:40px;padding:0 16px;border:1px solid #D6A64F;border-radius:3px;font-size:13px;background:{{ f.bg }};color:{{ f.fg }}">{{ f.label }}</button></sc-for>
+            <input type="text" value="{{ salesQ }}" sc-camel-on-input="{{ onSalesQ }}" placeholder="Search order, team, player, name" style="flex:1;min-width:200px;min-height:40px;padding:0 12px;font-size:14px;color:#1B1A17;background:#F4F1EA;border:0;border-radius:3px">
+            <button sc-camel-on-click="{{ exportCsv }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Export CSV ({{ exportCount }})</button>
+            
+          </div>
+          <sc-if value="{{ hasSel }}" hint-placeholder-val="{{ false }}"><div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center;background:rgba(214,166,79,.14);border-top:3px solid #D6A64F;padding:10px 14px"><b style="font-size:14px;margin-right:6px">{{ selCount }} selected</b><button sc-camel-on-click="{{ bulkEngraved }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Mark engraved</button><button sc-camel-on-click="{{ bulkPaid }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Mark paid</button><button sc-camel-on-click="{{ bulkColor }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Team color card</button><button sc-camel-on-click="{{ bulkBlack }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Black card</button><sc-if value="{{ notConfirming }}" hint-placeholder-val="{{ true }}"><button sc-camel-on-click="{{ askDelete }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Delete selected</button></sc-if><sc-if value="{{ confirming }}" hint-placeholder-val="{{ false }}"><span style="font-size:13px">Delete {{ selCount }} orders?</span><button sc-camel-on-click="{{ bulkDelete }}" style="min-height:40px;padding:0 14px;background:#D6A64F;color:#1B1A17;border:0;border-radius:3px;font-size:13px;font-weight:600">Confirm delete</button><button sc-camel-on-click="{{ cancelDelete }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px">Keep</button></sc-if><button sc-camel-on-click="{{ clearSel }}" style="min-height:40px;padding:0 14px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:13px;margin-left:auto">Clear</button></div></sc-if>
+          <div style="overflow-x:auto">
+            <div style="min-width:1100px;display:grid;gap:3px">
+              <div style="display:grid;grid-template-columns:28px 90px 70px minmax(110px,1fr) minmax(130px,1.2fr) 96px 78px 58px 84px 190px;gap:12px;padding:0 14px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#c9c4b6"><input type="checkbox" checked="{{ allChecked }}" sc-camel-on-change="{{ onAll }}" aria-label="Select all" style="accent-color:#D6A64F;width:18px;height:18px;margin:0"><span>Order</span><span>Date</span><span>Team</span><span>Player / name</span><span>Type</span><span>Card</span><span>Price</span><span>Status</span><span></span></div>
+              <sc-if value="{{ noRows }}" hint-placeholder-val="{{ true }}"><div style="padding:18px 14px;font-size:14px;color:#c9c4b6;background:rgba(180,172,157,.08)">No orders match. Place an order on the NBA Store side, or add demo orders.</div></sc-if>
+              <sc-for list="{{ rows }}" as="r" hint-placeholder-count="5"><div style="display:grid;grid-template-columns:28px 90px 70px minmax(110px,1fr) minmax(130px,1.2fr) 96px 78px 58px 84px 190px;gap:12px;align-items:center;padding:12px 14px;background:rgba(180,172,157,.08);border-left:3px solid {{ r.line }};font-size:14px">
+                <input type="checkbox" checked="{{ r.checked }}" sc-camel-on-change="{{ r.onCheck }}" aria-label="Select order" style="accent-color:#D6A64F;width:18px;height:18px;margin:0"><b style="font-family:'Space Grotesk',sans-serif;letter-spacing:.06em;font-size:13px">{{ r.id }}</b>
+                <span style="font-size:13px;color:#c9c4b6;line-height:1.35">{{ r.date }}<br>{{ r.time }}</span>
+                <span style="display:flex;align-items:center;gap:8px;min-width:0"><span style="width:12px;height:12px;border-radius:50%;background:{{ r.color }};border:1px solid #cfd2d4;flex:none"></span><span style="line-height:1.3">{{ r.team }}</span></span>
+                <b style="font-weight:600;line-height:1.3;min-width:0">{{ r.engrave }}</b>
+                <span style="font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#D6A64F">{{ r.kind }}</span>
+                <span style="font-size:13px">{{ r.card }}</span>
+                <span style="font-size:13px">{{ r.price }}</span>
+                <span><span style="display:inline-block;padding:4px 10px;border-radius:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border:1px solid #D6A64F;background:{{ r.stBg }};color:{{ r.stFg }}">{{ r.status }}</span></span>
+                <span style="display:flex;gap:6px;justify-content:flex-end"><button sc-camel-on-click="{{ r.toggle }}" style="min-height:36px;padding:0 10px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:12px">{{ r.toggleLabel }}</button><button sc-camel-on-click="{{ r.del }}" style="min-height:36px;padding:0 10px;background:transparent;color:#F4F1EA;border:1px solid rgba(244,241,234,.4);border-radius:3px;font-size:12px">Delete</button></span>
+              </div></sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </div>
+  </sc-if>
+
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+class Component extends DCLogic {
+  FAM = {
+    Blue: { c: '#006BB6', t: ['New York Knicks:knicks', 'Dallas Mavericks', 'Golden State Warriors', 'Memphis Grizzlies', 'Oklahoma City Thunder', 'Orlando Magic', 'Philadelphia 76ers'] },
+    Red: { c: '#CE1141', t: ['Chicago Bulls:bulls', 'Atlanta Hawks', 'Cleveland Cavaliers', 'Detroit Pistons', 'Houston Rockets', 'Los Angeles Clippers', 'Miami Heat', 'Portland Trail Blazers', 'Toronto Raptors'] },
+    Navy: { c: '#002D62', t: ['Indiana Pacers:pacers', 'Charlotte Hornets', 'Denver Nuggets', 'Los Angeles Lakers', 'Minnesota Timberwolves', 'New Orleans Pelicans', 'Phoenix Suns', 'Sacramento Kings', 'Utah Jazz', 'Washington Wizards'] },
+    Orange: { c: '#F58426', t: [] },
+    Purple: { c: '#552583', t: [] },
+    Green: { c: '#007A33', t: ['Boston Celtics:celtics', 'Milwaukee Bucks'] },
+    Black: { c: '#000000', t: ['Brooklyn Nets', 'San Antonio Spurs'] }
+  };
+  PLAYERS = {
+    'New York Knicks': ['Jalen Brunson', 'Karl-Anthony Towns', 'OG Anunoby', 'Mikal Bridges'],
+    'Dallas Mavericks': ['Cooper Flagg', 'Kyrie Irving'],
+    'Golden State Warriors': ['Stephen Curry', 'Jimmy Butler', 'Draymond Green', 'Yaxel Lendeborg'],
+    'Memphis Grizzlies': ['Ty Jerome', 'Cameron Boozer'],
+    'Oklahoma City Thunder': ['Shai Gilgeous-Alexander', 'Jalen Williams', 'Chet Holmgren', 'Alex Caruso'],
+    'Orlando Magic': ['Paolo Banchero', 'Franz Wagner', 'Desmond Bane', 'Jalen Suggs'],
+    'Philadelphia 76ers': ['Tyrese Maxey', 'Jaylen Brown', 'LeBron James', 'Joel Embiid'],
+    'Chicago Bulls': ['Josh Giddey', 'Norman Powell', 'Caleb Wilson', 'Matas Buzelis'],
+    'Atlanta Hawks': ['Jalen Johnson', 'Nickeil Alexander-Walker', 'Dyson Daniels', 'CJ McCollum'],
+    'Cleveland Cavaliers': ['Donovan Mitchell', 'James Harden', 'Evan Mobley', 'Jarrett Allen'],
+    'Detroit Pistons': ['Cade Cunningham', 'Jalen Duren', 'Ausar Thompson', 'Paul Reed'],
+    'Houston Rockets': ['Kevin Durant', 'Amen Thompson', 'Alperen Sengun', 'Fred VanVleet'],
+    'Los Angeles Clippers': ['Darius Garland', 'Brandon Ingram', 'Kris Dunn', 'Brook Lopez'],
+    'Miami Heat': ['Giannis Antetokounmpo', 'Bam Adebayo', 'Davion Mitchell', 'Tim Hardaway Jr.'],
+    'Portland Trail Blazers': ['Deni Avdija', 'Damian Lillard', 'Ja Morant', 'Jrue Holiday'],
+    'Toronto Raptors': ['Kawhi Leonard', 'Scottie Barnes', 'RJ Barrett'],
+    'Indiana Pacers': ['Tyrese Haliburton', 'Pascal Siakam', 'Ivica Zubac', 'Andrew Nembhard'],
+    'Charlotte Hornets': ['Kon Knueppel', 'Brandon Miller', 'Naz Reid', 'Coby White'],
+    'Denver Nuggets': ['Nikola Jokic', 'Jamal Murray', 'Aaron Gordon', 'DeMar DeRozan'],
+    'Los Angeles Lakers': ['Luka Doncic', 'Austin Reaves', 'Walker Kessler'],
+    'Minnesota Timberwolves': ['Anthony Edwards', 'LaMelo Ball', 'Rudy Gobert', 'Jaden McDaniels'],
+    'New Orleans Pelicans': ['Zion Williamson', 'Trey Murphy III', 'Jeremiah Fears', 'DeAndre Jordan'],
+    'Phoenix Suns': ['Devin Booker', 'Dillon Brooks', 'Jalen Green'],
+    'Sacramento Kings': ['Domantas Sabonis', 'Zach LaVine', 'Darius Acuff Jr.'],
+    'Utah Jazz': ['Lauri Markkanen', 'Jaren Jackson Jr.', 'Keyonte George', 'Darryn Peterson'],
+    'Washington Wizards': ['Anthony Davis', 'Trae Young', 'AJ Dybantsa', 'Khris Middleton'],
+    'Boston Celtics': ['Jayson Tatum', 'Derrick White', 'Payton Pritchard', 'Paul George'],
+    'Milwaukee Bucks': ['Tyler Herro', 'Myles Turner', 'Kyle Kuzma', "Kel'el Ware"],
+    'Brooklyn Nets': ['Julius Randle', 'Michael Porter Jr.'],
+    'San Antonio Spurs': ['Victor Wembanyama', 'Stephon Castle', "De'Aaron Fox", 'Dylan Harper']
+  };
+  defSigs() {
+    const out = []; let idx = 0;
+    ['Blue', 'Red', 'Navy', 'Green', 'Black'].forEach((f) => this.FAM[f].t.forEach((e) => {
+      const nm = e.split(':')[0];
+      (this.PLAYERS[nm] || []).forEach((p, k) => out.push({ id: 'p' + idx + '_' + k, name: p, team: idx, src: 'uploads/sig-steel-' + (((p.length + p.charCodeAt(0) + k) % 4) + 1) + '.png', ar: 2.4 }));
+      idx++;
+    }));
+    return out;
+  }
+  BASE = { knicks: 74, bulls: 78, pacers: 66, celtics: 70 };
+  DEF = { ls: { v: 67, min: 50, max: 150 }, lt: { v: 53, min: 0, max: 90 }, ns: { v: 100, min: 50, max: 200 }, nb: { v: 24, min: 0, max: 60 }, ss: { v: 100, min: 50, max: 200 }, sb: { v: 24, min: 0, max: 60 }, nt: { v: 55, min: 0, max: 90 }, mc: { v: 13, min: 1, max: 24 } };
+  LBL = [['ls', 'Team logo size', '%'], ['lt', 'Team logo position', 'px'], ['ns', 'Name size', '%'], ['nb', 'Name position', 'px'], ['ss', 'Signature size', '%'], ['sb', 'Signature position', 'px'], ['nt', 'NBA Store logo position', 'px'], ['mc', 'Max characters', '']];
+  state = this.init();
+  init() {
+    const admin0 = this.loadAdmin();
+    return {
+      screen: 'home', exp: null, team: null, filter: 'All', sortBy: 'color', cardType: 'color', mode: 'name', name: '', sigId: null,
+      pay: Object.assign({}, admin0.pay), paying: false,
+      order: null, qr: null, scanText: '', scanErr: '', kOrder: null, kName: '', kSigId: null, progress: 0,
+      adminReturn: 'home', adminTab: 'general', cal: this.calDef(), sigFilter: 'all', chartDays: 14, period: this.periodDefault(), dp: { from: '', to: '' }, expT: '', expP: '', dragSig: null, overSig: null, qt: { text: '', img: null }, kEdit: false, sc: { raw: null, url: null, ar: 2.4, name: '', team: 'all', cut: 65, msg: '', done: false, mode: 'new', pid: '', doneMsg: '' }, sales: { filter: 'all', q: '', type: 'all', card: 'all', team: 'all', from: '', to: '' }, expCols: { id: 1, date: 1, team: 1, type: 1, sig: 1, name: 1, card: 1, price: 1, status: 1 }, selected: {}, confirmDel: false, gen: { date: this.todayStr(), count: 10, price: '' }, pv: { team: 0, cardType: 'color', mode: 'name', name: 'AARON', sigId: null },
+      admin: admin0, orders: this.loadOrders()
+    };
+  }
+  defAdmin() {
+    return { price: '19.99', currency: '$', pay: { name: 'James H', num: '1234 5678 9112 3456', exp: '01/35', cvc: '123', note: 'Simulated payment. No real charge is made.' }, names: { 11: 'Houston Rockets' }, roy: { t: {}, p: {}, td: { k: 'pct', v: '5' }, pd: { k: 'pct', v: '13' } }, royV: 1, layout: Object.assign(JSON.parse(JSON.stringify(this.DEF)), {"ls":{"v":72,"min":50,"max":150},"lt":{"v":43,"min":0,"max":90},"ns":{"v":126,"min":50,"max":200},"nb":{"v":24,"min":0,"max":60},"ss":{"v":78,"min":50,"max":200},"sb":{"v":22,"min":0,"max":60},"nt":{"v":61,"min":0,"max":90},"mc":{"v":11,"min":1,"max":24}}), sigsV: 2, sigs: this.defSigs() };
+  }
+  loadAdmin() {
+    const d = this.defAdmin();
+    try {
+      const a = JSON.parse(localStorage.getItem('nbkc_admin') || 'null');
+      if (!a) return d;
+      const L = {}; Object.keys(d.layout).forEach((k) => { L[k] = Object.assign({}, d.layout[k], (a.layout || {})[k] || {}); });
+      const out = Object.assign(d, a, { layout: L });
+      if (a.sigsV !== 2) out.sigs = this.defSigs();
+      out.sigsV = 2;
+      if (a.royV !== 1) { out.roy = Object.assign({ t: {} }, a.roy, { p: {}, pd: { k: 'pct', v: '13' } }); out.royV = 1; }
+      return out;
+    } catch (e) { return d; }
+  }
+  loadOrders() { try { return JSON.parse(localStorage.getItem('nbkc_orders') || '{}') || {}; } catch (e) { return {}; } }
+  componentDidMount() { if (!Object.keys(this.state.orders).length) this.fillDays(30); }
+  componentWillUnmount() { clearInterval(this.timer); }
+  OVR = { 'New York Knicks': 'Orange', 'Phoenix Suns': 'Orange', 'Los Angeles Lakers': 'Purple', 'Utah Jazz': 'Purple', 'Sacramento Kings': 'Purple' };
+  FAMS = ['Blue', 'Orange', 'Red', 'Purple', 'Navy', 'Green', 'Black'];
+  teams() {
+    const out = [], N = this.state.admin.names || {};
+    ['Blue', 'Red', 'Navy', 'Green', 'Black'].forEach((f) => this.FAM[f].t.forEach((e) => {
+      const p = e.split(':'), slug = p[1] || p[0].toLowerCase().replace(/[^a-z0-9]+/g, '-'), i = out.length;
+      const ff = this.OVR[p[0]] || f; out.push({ name: (N[i] && N[i].trim()) || p[0], def: p[0], fam: ff, color: this.FAM[ff].c, slug, logo: this.rs('uploads/steel-' + slug + '.png') });
+    }));
+    return out;
+  }
+  rs(src) { const m = /^uploads\/(.+)\.png$/.exec(src || ''); return (m && window.__resources && window.__resources[m[1]]) || src; }
+  bu(src) {
+    src = this.rs(src);
+    if (!src || src.indexOf('data:') !== 0) return src;
+    this._bu = this._bu || {};
+    if (!this._bu[src]) { try { const p = src.split(','), mime = p[0].split(':')[1].split(';')[0], bin = atob(p[1]), u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); this._bu[src] = URL.createObjectURL(new Blob([u], { type: mime })); } catch (e) { return ''; } }
+    return this._bu[src];
+  }
+  saveA(a) { try { localStorage.setItem('nbkc_admin', JSON.stringify(a)); } catch (e) {} }
+  saveO(o) { try { localStorage.setItem('nbkc_orders', JSON.stringify(o)); } catch (e) {} }
+  setAdmin(fn) { this.setState((s) => { const a = fn(s.admin); this.saveA(a); return { admin: a }; }); }
+  setLayout(k, f, v) {
+    const x = parseInt(v, 10); if (isNaN(x)) return;
+    if (k === 'ss' || k === 'sb') this.setState((st) => ({ pv: Object.assign({}, st.pv, { mode: 'sig' }) }));
+    else if (k === 'ns' || k === 'nb') this.setState((st) => ({ pv: Object.assign({}, st.pv, { mode: 'name' }) }));
+    this.setAdmin((a) => {
+      const o = Object.assign({}, a.layout[k]);
+      if (f === 'v') o.v = Math.min(Math.max(x, o.min), o.max);
+      if (f === 'min') { o.min = Math.min(x, o.max - 1); o.v = Math.max(o.v, o.min); }
+      if (f === 'max') { o.max = Math.max(x, o.min + 1); o.v = Math.min(o.v, o.max); }
+      return Object.assign({}, a, { layout: Object.assign({}, a.layout, { [k]: o }) });
+    });
+  }
+  toSteel(im, cut) {
+    cut = cut || 0.65;
+    const sc = Math.min(1, 1000 / im.naturalWidth), W = Math.max(1, Math.round(im.naturalWidth * sc)), H = Math.max(1, Math.round(im.naturalHeight * sc));
+    const c = document.createElement('canvas'); c.width = W; c.height = H;
+    const x = c.getContext('2d'); x.drawImage(im, 0, 0, W, H);
+    const d = x.getImageData(0, 0, W, H).data;
+    let transp = 0, lum = 0, cnt = 0;
+    for (let i = 0; i < W * H; i++) { const a = d[i * 4 + 3]; if (a < 250) transp++; if (a > 20) { lum += d[i * 4] * 0.299 + d[i * 4 + 1] * 0.587 + d[i * 4 + 2] * 0.114; cnt++; } }
+    const useAlpha = transp / (W * H) > 0.05, dark = cnt ? lum / cnt / 255 < 0.4 : false, al = new Uint8Array(W * H);
+    for (let i = 0; i < W * H; i++) {
+      const a = d[i * 4 + 3] / 255, l = (d[i * 4] * 0.299 + d[i * 4 + 1] * 0.587 + d[i * 4 + 2] * 0.114) / 255;
+      const v = useAlpha ? a : dark ? Math.min(1, Math.max(0, (l - (cut - 0.3)) / 0.4)) : Math.min(1, Math.max(0, (cut - l) / 0.4));
+      al[i] = Math.round(v * 255);
+    }
+    let t = H, b = -1, l2 = W, r = -1;
+    for (let y = 0; y < H; y++) for (let xx = 0; xx < W; xx++) if (al[y * W + xx] > 40) { if (y < t) t = y; if (y > b) b = y; if (xx < l2) l2 = xx; if (xx > r) r = xx; }
+    if (b < 0) return null;
+    const cw = r - l2 + 1, ch = b - t + 1, o = document.createElement('canvas'); o.width = cw; o.height = ch;
+    const ox = o.getContext('2d'), od = ox.createImageData(cw, ch);
+    for (let y = 0; y < ch; y++) {
+      const g = y / ch, u = g < 0.48 ? g / 0.48 : (g - 0.48) / 0.52;
+      const col = g < 0.48 ? [244 - 70 * u, 246 - 66 * u, 248 - 61 * u] : [174 + 53 * u, 180 + 50 * u, 187 + 46 * u];
+      for (let xx = 0; xx < cw; xx++) { const p = (y * cw + xx) * 4; od.data[p] = col[0]; od.data[p + 1] = col[1]; od.data[p + 2] = col[2]; od.data[p + 3] = al[(t + y) * W + l2 + xx]; }
+    }
+    ox.putImageData(od, 0, 0);
+    return { url: o.toDataURL('image/png'), ar: cw / ch };
+  }
+  uploadSig(i, e) {
+    const f = e.target.files && e.target.files[0]; if (!f) return;
+    const rd = new FileReader();
+    rd.onload = () => { const im = new Image(); im.onload = () => { const r = this.toSteel(im); if (r) this.setAdmin((a) => ({ ...a, sigs: a.sigs.map((g, k) => (k === i ? { ...g, src: r.url, ar: r.ar } : g)) })); }; im.src = rd.result; };
+    rd.readAsDataURL(f); e.target.value = '';
+  }
+  availSigs(teamIdx) {
+    const all = this.state.admin.sigs, m = all.filter((g) => g.src && (g.team === 'all' || String(g.team) === String(teamIdx)));
+    return m.length ? m : all.filter((g) => g.src);
+  }
+  sigById(id, fallback) {
+    const g = this.state.admin.sigs.find((x) => x.id === id);
+    if (g && g.src) return { src: g.src, ar: g.ar, name: g.name };
+    return fallback || null;
+  }
+  cur() {
+    const s = this.state, sc = s.screen;
+    if (sc === 'admin') return { team: s.pv.team, cardType: s.pv.cardType, mode: s.pv.mode, name: s.pv.name, sigId: s.pv.sigId, fb: null };
+    if (s.exp === 'kiosk' && s.kOrder) return { team: s.kOrder.team, cardType: s.kOrder.cardType, mode: s.kOrder.mode, name: s.kName, sigId: s.kSigId, fb: s.kOrder.sigSrc ? { src: s.kOrder.sigSrc, ar: s.kOrder.sigAr, name: s.kOrder.sigName } : null };
+    return { team: s.team, cardType: s.cardType, mode: s.mode, name: s.name, sigId: s.sigId, fb: null };
+  }
+  newId() { const ch = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789'; let id = 'NBA-'; for (let i = 0; i < 6; i++) id += ch[Math.floor(Math.random() * ch.length)]; return id; }
+  qrFor(text) {
+    try {
+      const q = window.qrcode(0, 'M'); q.addData(text); q.make();
+      const n = q.getModuleCount(), cell = 16, m = 4, S = (n + 2 * m) * cell, cv = document.createElement('canvas');
+      cv.width = cv.height = S; const x = cv.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, S, S); x.fillStyle = '#000';
+      for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) if (q.isDark(r, c)) x.fillRect((c + m) * cell, (r + m) * cell, cell, cell);
+      return cv.toDataURL('image/png');
+    } catch (e) { return null; }
+  }
+  maxChars() { return this.state.admin.layout.mc.v; }
+  priceLabel(useGen) { const a = this.state.admin, gp = parseFloat((this.state.gen || {}).price), p = !isNaN(gp) && useGen ? gp : parseFloat(a.price); return (a.currency || '') + (isNaN(p) ? '0.00' : p.toFixed(2)); }
+  canOrder() { const s = this.state; return s.mode === 'name' ? s.name.trim().length > 0 : !!this.sigById(s.sigId); }
+  goHome = () => { clearInterval(this.timer); this.setState({ ...this.init(), admin: this.state.admin, pay: Object.assign({}, this.state.admin.pay), orders: this.loadOrders() }); };
+  goColors = () => { clearInterval(this.timer); this.setState({ screen: 'colors' }); };
+  goFlow = () => { clearInterval(this.timer); this.setState({ screen: 'flow' }); };
+  goSales = () => { clearInterval(this.timer); this.setState({ screen: 'sales', orders: this.loadOrders() }); };
+  goStore = () => this.setState({ exp: 'store', screen: 'welcome' });
+  goKiosk = () => this.setState({ exp: 'kiosk', screen: 'welcome' });
+  toKiosk = () => { this.setState({ exp: 'kiosk', screen: 'scan', orders: this.loadOrders(), scanText: '', scanErr: '' }); this.focusScan(); };
+  focusScan() { setTimeout(() => { const el = document.getElementById('scan-input'); if (el) el.focus(); }, 120); }
+  start = () => { if (this.state.exp === 'kiosk') { this.setState({ screen: 'scan', orders: this.loadOrders(), scanText: '', scanErr: '' }); this.focusScan(); } else this.setState({ screen: 'team' }); };
+  goBack = () => {
+    const sc = this.state.screen;
+    if (sc === 'welcome') this.goHome();
+    else if (sc === 'team' || sc === 'scan') this.setState({ screen: 'welcome' });
+    else if (sc === 'validate') { this.setState({ screen: 'scan', kOrder: null, scanText: '' }); this.focusScan(); }
+    else if (sc === 'personalize') this.setState({ screen: 'team' });
+    else if (sc === 'pay') this.setState({ screen: 'personalize' });
+    else if (sc === 'validate') this.setState({ screen: 'scan', kOrder: null, scanText: '' });
+  };
+  calDef() { return { w: 54, h: 86, r: 6, hole: 4, holeY: 7, stroke: 0.5, cross: true }; }
+  calSvg() {
+    const c = this.state.cal, m = 4, W = c.w + 2 * m, H = c.h + 2 * m, sw = c.stroke, k = '#000';
+    let s = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W + 'mm" height="' + H + 'mm" viewBox="0 0 ' + W + ' ' + H + '"><rect width="' + W + '" height="' + H + '" fill="#fff"/>';
+    s += '<rect x="' + m + '" y="' + m + '" width="' + c.w + '" height="' + c.h + '" rx="' + Math.min(c.r, c.w / 2, c.h / 2) + '" fill="none" stroke="' + k + '" stroke-width="' + sw + '"/>';
+    if (c.hole > 0) s += '<circle cx="' + (m + c.w / 2) + '" cy="' + (m + c.holeY) + '" r="' + (c.hole / 2) + '" fill="none" stroke="' + k + '" stroke-width="' + sw + '"/>';
+    if (c.cross) { const cx = m + c.w / 2, cy = m + c.h / 2; s += '<path d="M' + (cx - 4) + ' ' + cy + 'H' + (cx + 4) + 'M' + cx + ' ' + (cy - 4) + 'V' + (cy + 4) + '" stroke="' + k + '" stroke-width="' + sw + '"/>'; }
+    return { svg: s + '</svg>', W, H };
+  }
+  svgUrl(svg) { this._sv = this._sv || {}; if (!this._sv[svg]) { const keys = Object.keys(this._sv); if (keys.length > 30) { URL.revokeObjectURL(this._sv[keys[0]]); delete this._sv[keys[0]]; } this._sv[svg] = URL.createObjectURL(new Blob([svg], { type: 'image/svg+xml' })); } return this._sv[svg]; }
+  calExport = () => {
+    const o = this.calSvg(), k = 20, img = new Image();
+    img.onload = () => { const cv = document.createElement('canvas'); cv.width = Math.round(o.W * k); cv.height = Math.round(o.H * k); const x = cv.getContext('2d'); x.fillStyle = '#fff'; x.fillRect(0, 0, cv.width, cv.height); x.drawImage(img, 0, 0, cv.width, cv.height); cv.toBlob((b) => this.dl(b, 'calibration-outline-' + this.state.cal.w + 'x' + this.state.cal.h + 'mm.png'), 'image/png'); };
+    img.src = this.svgUrl(o.svg);
+  };
+  goItems = () => this.setState((st) => ({ screen: 'admin', adminReturn: st.adminReturn === 'sales' ? 'home' : st.adminReturn }));
+  toggleAdmin = () => {
+    const s = this.state;
+    if (s.screen === 'admin') this.setState({ screen: s.adminReturn });
+    else this.setState({ adminReturn: s.screen, screen: 'admin' });
+  };
+  newOrder = () => this.setState({ screen: 'welcome', team: null, name: '', sigId: null, mode: 'name', cardType: 'color', order: null, qr: null, filter: 'All' });
+  restartKiosk = () => { clearInterval(this.timer); this.setState({ kEdit: false, screen: 'welcome', kOrder: null, kName: '', kSigId: null, progress: 0, scanText: '' }); };
+  toggleKEdit = () => this.setState((st) => ({ kEdit: !st.kEdit }));
+  cancelOrder = () => { this.setState({ screen: 'scan', kOrder: null, scanText: '', kEdit: false }); this.focusScan(); };
+  goPay = () => { if (this.canOrder()) this.setState({ screen: 'pay' }); };
+  pay = () => {
+    if (this.state.paying) return;
+    this.setState({ paying: true });
+    setTimeout(() => {
+      const s = this.state, T = this.teams(), t = T[s.team], sg = s.mode === 'sig' ? this.sigById(s.sigId) : null, id = this.newId();
+      const order = { id, team: s.team, teamName: t.name, cardType: s.cardType, mode: s.mode, name: s.name.trim().toUpperCase(), sigId: s.sigId, sigName: sg ? sg.name : '', sigSrc: sg ? sg.src : null, sigAr: sg ? sg.ar : null, price: this.priceLabel(), created: Date.now(), status: 'paid' };
+      const orders = Object.assign({}, this.loadOrders(), { [id]: order });
+      this.saveO(orders);
+      this.setState({ orders, order, qr: this.qrFor(id), paying: false, screen: 'qr' });
+    }, 1400);
+  };
+  numOf(o) { const n = parseFloat(String(o.price || '').replace(/[^0-9.]/g, '')); return isNaN(n) ? 0 : n; }
+  setOrders(orders) { this.saveO(orders); this.setState({ orders }); }
+  toggleOrder(id) { const o = this.loadOrders(), x = o[id]; if (!x) return; o[id] = Object.assign({}, x, { status: x.status === 'engraved' ? 'paid' : 'engraved', engraved: x.status === 'engraved' ? null : Date.now() }); this.setOrders(o); }
+  deleteOrder(id) { const o = this.loadOrders(); delete o[id]; this.setOrders(o); }
+  todayStr() { const d = new Date(), p = (n) => String(n).padStart(2, '0'); return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); }
+  rndOrder(T, ts, id) {
+    const names = ['AARON', 'MAYA', 'LUCAS', 'SOFIA', 'NOAH', 'EMMA', 'LEO', 'ZOE', 'ADAM', 'INES'], ti = Math.floor(Math.random() * T.length), sg = this.availSigs(ti), useSig = sg.length && Math.random() < 0.6, pick = useSig ? sg[Math.floor(Math.random() * sg.length)] : null;
+    return { id, team: ti, teamName: T[ti].name, cardType: Math.random() < 0.4 ? 'black' : 'color', mode: useSig ? 'sig' : 'name', name: useSig ? '' : names[Math.floor(Math.random() * names.length)], sigId: pick ? pick.id : null, sigName: pick ? pick.name : '', sigSrc: pick && pick.src && pick.src.indexOf('data:') !== 0 ? pick.src : null, sigAr: pick ? pick.ar : null, price: this.priceLabel(true), created: ts, status: Math.random() < 0.7 ? 'engraved' : 'paid', demo: true };
+  }
+  seedDemo = () => { const T = this.teams(), o = this.loadOrders(); for (let i = 0; i < 24; i++) { const id = this.newId(); o[id] = this.rndOrder(T, Date.now() - Math.floor(Math.random() * 20 * 86400000), id); } this.setOrders(o); };
+  genOrders = () => {
+    const g = this.state.gen, n = Math.max(1, Math.min(500, parseInt(g.count, 10) || 0)), base = new Date(g.date + 'T00:00:00').getTime();
+    if (isNaN(base)) return;
+    const T = this.teams(), o = this.loadOrders();
+    for (let i = 0; i < n; i++) { const hr = Math.min(21, Math.max(8, Math.round(9 + Math.random() * 12 + (Math.random() - 0.5) * 3))), id = this.newId(); o[id] = this.rndOrder(T, base + hr * 3600000 + Math.floor(Math.random() * 3600000), id); }
+    this.setOrders(o);
+  };
+  fillDays = (n) => {
+    const T = this.teams(), o = {}, now = Date.now(), R = [[90, 140], [30, 70], [30, 65], [35, 75], [45, 90], [70, 115], [100, 150]];
+    for (let d = n - 1; d >= 0; d--) {
+      const day = new Date(); day.setDate(day.getDate() - d); day.setHours(0, 0, 0, 0);
+      const r = R[day.getDay()], n = r[0] + Math.floor(Math.random() * (r[1] - r[0] + 1)), base = day.getTime();
+      for (let i = 0; i < n; i++) {
+        const hr = Math.min(21, Math.max(8, Math.round(9 + Math.random() * 12 + (Math.random() - 0.5) * 3))), id = this.newId();
+        let ts = base + hr * 3600000 + Math.floor(Math.random() * 3600000); if (ts > now) ts = now - Math.floor(Math.random() * 3600000);
+        const x = this.rndOrder(T, ts, id); x.status = Math.random() < (d === 0 ? 0.6 : 0.92) ? 'engraved' : 'paid'; o[id] = x;
+      }
+    }
+    this.saveO(o); this.setState({ orders: o, selected: {}, confirmDel: false });
+  };
+  bulkApply(fn) { const o = this.loadOrders(); Object.keys(this.state.selected).forEach((id) => { if (o[id]) o[id] = fn(o[id]); }); this.setOrders(o); }
+  bulkDelete = () => { const ids = Object.keys(this.state.selected); if (!ids.length) return; const o = this.loadOrders(); ids.forEach((id) => delete o[id]); this.saveO(o); this.setState({ orders: o, selected: {}, confirmDel: false }); };
+  filteredOrders() {
+    const s = this.state, sf = s.sales, ql = (sf.q || '').trim().toLowerCase(), f0 = sf.from ? new Date(sf.from + 'T00:00:00').getTime() : null, t0 = sf.to ? new Date(sf.to + 'T23:59:59').getTime() : null;
+    return Object.values(s.orders).sort((a, b) => b.created - a.created).filter((o) => (sf.filter === 'all' || o.status === sf.filter) && (sf.type === 'all' || (sf.type === 'sig') === (o.mode === 'sig')) && (sf.card === 'all' || (sf.card === 'black') === (o.cardType === 'black')) && (sf.team === 'all' || String(o.team) === sf.team) && (f0 === null || o.created >= f0) && (t0 === null || o.created <= t0) && (!ql || [o.id, o.teamName, o.name, o.sigName].join(' ').toLowerCase().includes(ql)));
+  }
+  dstr(d) { const p = (n) => String(n).padStart(2, '0'); return d.getFullYear() + '-' + p(d.getMonth() + 1) + '-' + p(d.getDate()); }
+  periodDefault() { const d = new Date(); return { from: this.dstr(new Date(d.getFullYear(), d.getMonth(), 1)), to: this.dstr(d) }; }
+  setPeriod(p) { this.setState((st) => ({ period: Object.assign({}, st.period, p) })); }
+  roy(kind, key) { const R = this.state.admin.roy || {}, m = (R[kind] || {})[key]; if (m) return Object.assign({ k: 'pct', v: '0' }, m, { own: true }); return Object.assign({ k: 'pct', v: '0' }, R[kind + 'd'], { own: false }); }
+  clearRoy(kind, key) { this.setAdmin((a) => { const r = a.roy || {}, m = Object.assign({}, r[kind] || {}); delete m[key]; return { ...a, roy: { ...r, [kind]: m } }; }); }
+  clearAllRoy(kind) { this.setAdmin((a) => ({ ...a, roy: { ...(a.roy || {}), [kind]: {} } })); }
+  setRoyDef(kind, patch) { this.setAdmin((a) => { const r = a.roy || {}; return { ...a, roy: { ...r, [kind + 'd']: Object.assign({ k: 'pct', v: '0' }, r[kind + 'd'], patch) } }; }); }
+  setRoy(kind, key, patch) { const b = this.roy(kind, key); this.setAdmin((a) => { const r = a.roy || { t: {}, p: {} }, cur = Object.assign({ k: b.k, v: b.v }, (r[kind] || {})[key], patch); return { ...a, roy: { ...r, [kind]: { ...(r[kind] || {}), [key]: cur } } }; }); }
+  rateLabel(r) { const c = this.state.admin.currency || '', v = parseFloat(r.v) || 0; return r.k === 'pct' ? v + '% of sale' : c + v.toFixed(2) + ' per sale'; }
+  buildReport(kind) {
+    const s = this.state, A = s.admin, T = this.teams(), P = s.period, r2 = (n) => Math.round(n * 100) / 100;
+    const from = new Date(P.from + 'T00:00:00').getTime(), to = new Date(P.to + 'T23:59:59').getTime(), map = {}, keys = [];
+    Object.values(s.orders).filter((o) => o.status === 'engraved' && o.created >= from && o.created <= to).sort((a, b) => a.created - b.created).forEach((o) => {
+      let key, name, rk, rid;
+      if (kind === 'team') { key = 't' + o.team; name = (T[o.team] || {}).name || o.teamName; rk = 't'; rid = String(o.team); }
+      else { if (o.mode !== 'sig' || !o.sigName) return; const g = A.sigs.find((x) => x.id === o.sigId) || A.sigs.find((x) => x.name === o.sigName); rid = g ? g.id : 'n:' + o.sigName; key = rid; name = g ? g.name : o.sigName; rk = 'p'; }
+      const r = this.roy(rk, rid);
+      if (!map[key]) { map[key] = { key, name, r, orders: [], sales: 0, royalty: 0 }; keys.push(key); }
+      const price = this.numOf(o), v = parseFloat(r.v) || 0, roy = r2(r.k === 'pct' ? price * v / 100 : v);
+      map[key].orders.push({ o, price, roy }); map[key].sales += price; map[key].royalty += roy;
+    });
+    const list = keys.map((k) => map[k]).sort((a, b) => b.royalty - a.royalty);
+    list.forEach((e) => { e.sales = r2(e.sales); e.royalty = r2(e.royalty); });
+    return { list, from: P.from, to: P.to };
+  }
+  entRows(e) { return e.orders.map((x) => [x.o.id, new Date(x.o.created).toISOString().slice(0, 16).replace('T', ' '), x.o.teamName, x.o.cardType === 'black' ? 'Black' : 'Team color', x.o.mode === 'sig' ? 'Signature: ' + x.o.sigName : 'Name: ' + (x.o.name || ''), x.price, x.roy]); }
+  dl(blob, name) { const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = name; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 3000); }
+  fname(s) { return String(s).replace(/[^A-Za-z0-9]+/g, '-').replace(/^-|-$/g, '').toLowerCase() || 'export'; }
+  csvEntity(kind, name) {
+    const rep = this.buildReport(kind), e = rep.list.find((x) => x.name === name) || { name, r: this.roy(kind === 'team' ? 't' : 'p', ''), orders: [], sales: 0, royalty: 0 };
+    const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"';
+    const lines = [[kind === 'team' ? 'Team' : 'Player', e.name], ['Period', rep.from + ' to ' + rep.to], ['Royalty rate', this.rateLabel(e.r)], [], ['Order', 'Date', 'Team', 'Card', 'Engraving', 'Sale price', 'Royalty']].concat(this.entRows(e), [['Total', '', '', '', e.orders.length + ' orders', e.sales, e.royalty]]);
+    this.dl(new Blob([lines.map((l) => l.map(q).join(',')).join('\n')], { type: 'text/csv' }), (kind === 'team' ? 'team-' : 'player-') + this.fname(name) + '-' + rep.from + '-to-' + rep.to + '.csv');
+  }
+  xlsxReport(kind) {
+    const X = window.XLSX; if (!X) return;
+    const rep = this.buildReport(kind), wb = X.utils.book_new(), label = kind === 'team' ? 'Team' : 'Player', r2 = (n) => Math.round(n * 100) / 100;
+    const tot = rep.list.reduce((t, e) => ({ n: t.n + e.orders.length, s: t.s + e.sales, r: t.r + e.royalty }), { n: 0, s: 0, r: 0 });
+    const sum = [['Royalties by ' + label.toLowerCase()], ['Period', rep.from + ' to ' + rep.to], [], [label, 'Royalty rate', 'Orders', 'Sales', 'Royalty owed']].concat(rep.list.map((e) => [e.name, this.rateLabel(e.r), e.orders.length, e.sales, e.royalty]), [['Total', '', tot.n, r2(tot.s), r2(tot.r)]]);
+    const ws0 = X.utils.aoa_to_sheet(sum); ws0['!cols'] = [{ wch: 28 }, { wch: 18 }, { wch: 10 }, { wch: 12 }, { wch: 14 }]; X.utils.book_append_sheet(wb, ws0, 'Summary');
+    const used = { summary: 1 };
+    rep.list.forEach((e) => {
+      let nm = e.name.replace(/[\\\/?*\[\]:]/g, '').slice(0, 28) || label, k = nm.toLowerCase(), n = 1; while (used[k]) { n++; nm = nm.slice(0, 26) + ' ' + n; k = nm.toLowerCase(); } used[k] = 1;
+      const rows = [[label, e.name], ['Period', rep.from + ' to ' + rep.to], ['Royalty rate', this.rateLabel(e.r)], [], ['Order', 'Date', 'Team', 'Card', 'Engraving', 'Sale price', 'Royalty']].concat(this.entRows(e), [['Total', '', '', '', e.orders.length + ' orders', e.sales, e.royalty]]);
+      const ws = X.utils.aoa_to_sheet(rows); ws['!cols'] = [{ wch: 14 }, { wch: 18 }, { wch: 24 }, { wch: 12 }, { wch: 30 }, { wch: 12 }, { wch: 12 }]; X.utils.book_append_sheet(wb, ws, nm);
+    });
+    const out = X.write(wb, { bookType: 'xlsx', type: 'array' });
+    this.dl(new Blob([out], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), 'royalties-' + (kind === 'team' ? 'teams' : 'players') + '-' + rep.from + '-to-' + rep.to + '.xlsx');
+  }
+  exportT = () => { const v = this.state.expT, t = (this.teams()[parseInt(v, 10)] || {}).name; if (v !== '' && t) this.csvEntity('team', t); };
+  exportP = () => { const g = this.state.admin.sigs.find((x) => x.id === this.state.expP); if (g) this.csvEntity('player', g.name); };
+  exportOne = () => { const v = this.state.expSel; if (!v) return; const kind = v[0] === 't' ? 'team' : 'player', id = v.slice(2), T = this.teams(), g = this.state.admin.sigs.find((x) => x.id === id); const name = kind === 'team' ? (T[parseInt(id, 10)] || {}).name : (g || {}).name; if (name) this.csvEntity(kind, name); };
+  exportCsv = () => {
+    const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"', cols = [['id', 'Order', (o) => o.id], ['date', 'Date', (o) => new Date(o.created).toISOString()], ['team', 'Team', (o) => o.teamName], ['type', 'Engraving type', (o) => (o.mode === 'sig' ? 'Signature' : 'Name')], ['sig', 'Player signature', (o) => o.sigName], ['name', 'Name', (o) => o.name], ['card', 'Card', (o) => (o.cardType === 'black' ? 'Black' : 'Team color')], ['price', 'Price', (o) => o.price], ['status', 'Status', (o) => o.status]].filter((c) => this.state.expCols[c[0]]);
+    if (!cols.length) return;
+    const csv = [cols.map((c) => q(c[1])).join(',')].concat(this.filteredOrders().map((o) => cols.map((c) => q(c[2](o))).join(','))).join('\n');
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'orders.csv'; document.body.appendChild(a); a.click(); a.remove();
+  };
+  exportCsvOld = () => {
+    const q = (v) => '"' + String(v == null ? '' : v).replace(/"/g, '""') + '"', rows = Object.values(this.state.orders).sort((a, b) => b.created - a.created);
+    const csv = ['Order,Date,Team,Engraving type,Player signature,Name,Card,Price,Status'].concat(rows.map((o) => [o.id, new Date(o.created).toISOString(), o.teamName, o.mode === 'sig' ? 'Signature' : 'Name', o.sigName, o.name, o.cardType === 'black' ? 'Black' : 'Team color', o.price, o.status].map(q).join(','))).join('\n');
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([csv], { type: 'text/csv' })); a.download = 'orders.csv'; document.body.appendChild(a); a.click(); a.remove();
+  };
+  scProcess(raw, cut) {
+    const im = new Image();
+    im.onload = () => { const r = this.toSteel(im, cut / 100); this.setState((st) => ({ sc: Object.assign({}, st.sc, { raw, cut, url: r ? r.url : null, ar: r ? r.ar : 2.4, msg: r ? '' : 'No ink found. Try a lower sensitivity.', done: false }) })); };
+    im.src = raw;
+  }
+  scFile = (e) => { const f = e.target.files && e.target.files[0]; if (!f) return; const rd = new FileReader(); rd.onload = () => this.scProcess(rd.result, this.state.sc.cut); rd.readAsDataURL(f); e.target.value = ''; };
+  scSave = () => { const sc = this.state.sc, i = parseInt(sc.pid, 10); if (!sc.url || isNaN(i)) return; this.setAdmin((a) => ({ ...a, sigs: a.sigs.map((x, k) => (k === i ? { ...x, name: sc.name.trim() || x.name, team: sc.team === 'all' ? 'all' : parseInt(sc.team, 10), src: sc.url, ar: sc.ar } : x)) })); this.setState((st) => ({ sc: Object.assign({}, st.sc, { done: true, doneMsg: 'Saved. The player now uses this signature.' }) })); };
+  scAdd = () => { const sc = this.state.sc; if (!sc.url) return; this.setAdmin((a) => ({ ...a, sigs: a.sigs.concat([{ id: 'c' + Date.now(), name: sc.name.trim() || 'New signature', team: sc.team === 'all' ? 'all' : parseInt(sc.team, 10), src: sc.url, ar: sc.ar }]) })); this.setState((st) => ({ sc: Object.assign({}, st.sc, { done: true, doneMsg: 'Added. Find it in the Signatures tab.' }) })); };
+  qtSet(v) { const t = (v || '').slice(0, 40), c = t.trim().toUpperCase(); this.setState({ qt: { text: t, img: c ? this.qrFor(c) : null } }); }
+  onScan = (e) => this.setState({ scanText: e.target.value, scanErr: '' });
+  onScanKey = (e) => { if (e.key === 'Enter') this.lookup(this.state.scanText); };
+  refocus = () => setTimeout(() => { if (this.state.screen === 'scan') { const el = document.getElementById('scan-input'); if (el && document.activeElement !== el && !['INPUT', 'SELECT', 'TEXTAREA'].includes((document.activeElement || {}).tagName)) el.focus(); } }, 250);
+  lookup(text) {
+    const m = /NBA-[A-Z0-9]{6}/i.exec(text || ''), id = m ? m[0].toUpperCase() : (text || '').trim().toUpperCase();
+    const orders = this.loadOrders(), o = orders[id];
+    if (!id) return;
+    if (!o) { this.setState({ orders, scanErr: 'Order ' + id + ' was not found. Please try again.', scanText: '' }); return; }
+    if (o.status === 'engraved') { this.setState({ orders, scanErr: 'Order ' + id + ' has already been engraved.', scanText: '' }); return; }
+    this.setState({ orders, kOrder: o, kName: o.name || '', kSigId: o.sigId, screen: 'validate', scanText: '', scanErr: '', kEdit: false });
+  }
+  confirmEngrave = () => {
+    const s = this.state; if (!this.kOk()) return;
+    clearInterval(this.timer); this.setState({ screen: 'engrave', progress: 0 });
+    this.timer = setInterval(() => {
+      const p = Math.min(100, this.state.progress + 2); this.setState({ progress: p });
+      if (p >= 100) {
+        clearInterval(this.timer);
+        const st = this.state, o = st.kOrder, sg = this.sigById(st.kSigId, o.sigSrc ? { src: o.sigSrc, ar: o.sigAr, name: o.sigName } : null);
+        const upd = Object.assign({}, o, { name: st.kName.trim().toUpperCase(), sigId: st.kSigId, sigName: sg ? sg.name : o.sigName, sigSrc: sg ? sg.src : o.sigSrc, sigAr: sg ? sg.ar : o.sigAr, status: 'engraved', engraved: Date.now() });
+        const oo = Object.assign({}, this.loadOrders(), { [o.id]: upd }); this.saveO(oo);
+        this.setState({ orders: oo, kOrder: upd });
+      }
+    }, 120);
+  };
+  kOk() { const s = this.state; return s.kOrder && (s.kOrder.mode === 'name' ? s.kName.trim().length > 0 : !!this.sigById(s.kSigId, s.kOrder.sigSrc ? { src: s.kOrder.sigSrc } : null)); }
+  sigOptList(teamIdx, selId, onPick) {
+    const gold = '#D6A64F';
+    return this.availSigs(teamIdx).map((g) => ({ bgi: 'url(' + this.bu(g.src) + ')', label: g.name, bg: selId === g.id ? 'rgba(214,166,79,.22)' : 'rgba(180,172,157,.08)', line: selId === g.id ? gold : 'rgba(244,241,234,.2)', pick: () => onPick(g.id) }));
+  }
+  renderVals() {
+    const s = this.state, A = s.admin, L = A.layout, scr = s.screen, exp = s.exp;
+    const T = this.teams(), gold = '#D6A64F', dark = '#1B1A17', cream = '#F4F1EA';
+    const on = (v) => (v ? gold : 'transparent'), onF = (v) => (v ? dark : cream);
+    const cs = this.cur(), f = 240 / 112, team = T[cs.team != null ? cs.team : 0] || T[0];
+    const nm = (cs.name || '').toUpperCase(), n = nm.length;
+    const sg = cs.mode === 'sig' ? (this.sigById(cs.sigId, cs.fb) || (scr === 'admin' || scr === 'personalize' ? (this.availSigs(cs.team)[0] ? { src: this.availSigs(cs.team)[0].src, ar: this.availSigs(cs.team)[0].ar } : null) : null)) : null;
+    const nameF = 9 * f * (L.ns.v / 100) * (n <= 8 ? 1 : Math.max(0.4, 8 / n));
+    const c = {
+      body: cs.cardType === 'black' ? '#000000' : team.color, holeBg: cs.cardType === 'black' ? 'transparent' : '#F4F1EA',
+      logoBgi: 'url(' + team.logo + ')', logoW: Math.round((this.BASE[team.slug] || 70) * (L.ls.v / 100) * 10) / 10 + '%', logoH: Math.round(88 * (L.ls.v / 100) * f) + 'px', logoTop: Math.round(L.lt.v * f) + 'px',
+      isName: cs.mode !== 'sig' || !sg, isSig: cs.mode === 'sig' && !!sg,
+      nameShown: n ? nm : 'YOUR NAME', nameOpacity: n ? 1 : 0.45, nameFont: Math.round(nameF * 10) / 10 + 'px', nameBottom: Math.round(L.nb.v * f) + 'px',
+      sigAr: sg ? sg.ar : 2.4, sigW: Math.round(56 * (L.ss.v / 100) * 10) / 10 + '%', sigBottom: Math.round(L.sb.v * f) + 'px',
+      storeTop: Math.round(L.nt.v * f) + 'px'
+    };
+    const kiosk = exp === 'kiosk', stepsDef = kiosk ? [['scan', 'Scan'], ['validate', 'Check'], ['engrave', 'Engrave']] : [['team', 'Team'], ['personalize', 'Personalize'], ['pay', 'Pay'], ['qr', 'QR code']];
+    const idx = stepsDef.findIndex((x) => x[0] === (scr === 'admin' ? s.adminReturn : scr));
+    const done = s.progress >= 100, tOpts = T.map((t, i) => ({ v: String(i), l: t.name }));
+    const pvSig = s.pv.mode === 'sig';
+    const cardLabel = cs.cardType === 'black' ? 'Black card' : team.fam + ' team color card';
+    const engraveLabel = cs.mode === 'sig' ? (sg && (this.sigById(cs.sigId, cs.fb) || {}).name ? 'Signature: ' + this.sigById(cs.sigId, cs.fb).name : 'Player signature') : 'Name: ' + (nm || '-');
+    const recent = Object.values(s.orders).sort((a, b) => b.created - a.created).slice(0, 5);
+    const tabs = [['general', 'General'], ['teams', 'Teams'], ['sigs', 'Signatures'], ['layout', 'Layout'], ['qr', 'QR tool'], ['clean', 'Signature tool'], ['calib', 'Calibration']];
+    const pvTog = (k, v) => ({ bg: on(s.pv[k] === v), fg: onF(s.pv[k] === v) });
+    try { document.documentElement.style.setProperty('--nbk-sig', sg ? 'url("' + this.bu(sg.src) + '")' : 'none'); } catch (e) {}
+    const T2 = T, cur = A.currency || '', dpF = s.dp.from ? new Date(s.dp.from + 'T00:00:00').getTime() : null, dpT = s.dp.to ? new Date(s.dp.to + 'T23:59:59').getTime() : null, all = Object.values(s.orders).sort((a, b) => b.created - a.created).filter((o) => (dpF === null || o.created >= dpF) && (dpT === null || o.created <= dpT));
+    const rev = all.reduce((t, o) => t + this.numOf(o), 0), eng = all.filter((o) => o.status === 'engraved').length, sigN = all.filter((o) => o.mode === 'sig').length;
+    const tally = (keyFn, subFn) => { const m = {}; all.forEach((o) => { const k = keyFn(o); if (!k) return; m[k] = m[k] || { label: k, sub: subFn(o), n: 0 }; m[k].n++; }); const arr = Object.values(m).sort((a, b) => b.n - a.n).slice(0, 6), mx = arr.length ? arr[0].n : 1; return arr.map((x) => Object.assign(x, { pct: Math.round(x.n / mx * 100) })); };
+    const fmt = (n) => cur + n.toFixed(2);
+    const sf = s.sales, ql = sf.q.trim().toLowerCase();
+    const shown = this.filteredOrders();
+    const setSales = (p) => this.setState((st) => ({ sales: Object.assign({}, st.sales, p) }));
+    const dt = (t) => new Date(t);
+    const DAY = 86400000, sod = (t) => { const d = new Date(t); d.setHours(0, 0, 0, 0); return d.getTime(); };
+    const perDay = {}, hrs = Array(24).fill(0), wk = Array(7).fill(0), wkN = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+    all.forEach((o) => { const d = sod(o.created), dd = dt(o.created); perDay[d] = (perDay[d] || 0) + 1; hrs[dd.getHours()]++; wk[(dd.getDay() + 6) % 7]++; });
+    const keys = Object.keys(perDay).map(Number), useRange = !!(s.dp.from && s.dp.to), endDay = useRange ? sod(dpT) : Math.max(sod(Date.now()), keys.length ? Math.max.apply(null, keys) : 0);
+    const mk = (arr, labelFn, tipFn, hi) => { const mx = Math.max.apply(null, arr.concat([1])); return arr.map((n, i) => ({ n: n || '', px: n ? Math.max(4, Math.round(n / mx * 96)) : 2, c: n && i === hi ? gold : (n ? 'rgba(214,166,79,.5)' : 'rgba(244,241,234,.12)'), label: labelFn(i), tip: tipFn(i, n) })); };
+    const N = useRange ? Math.max(1, Math.min(120, Math.round((sod(dpT) - sod(dpF)) / DAY) + 1)) : (s.chartDays || 14), dayKey = (i) => { const d = new Date(endDay); d.setDate(d.getDate() - (N - 1 - i)); d.setHours(0, 0, 0, 0); return d.getTime(); }, dayArr = Array.from({ length: N }, (_, i) => perDay[dayKey(i)] || 0), lstep = N <= 16 ? 1 : N <= 35 ? 3 : 7;
+    const dayDate = (i) => dt(dayKey(i)), argmax = (a) => a.reduce((b, v, i) => (v > a[b] ? i : b), 0);
+    let bestKey = null; keys.forEach((k) => { if (bestKey === null || perDay[k] > perDay[bestKey]) bestKey = k; });
+    const peakH = argmax(hrs), peakW = argmax(wk), hasAny = all.length > 0;
+    const donut = (title, a, b, ca, cb) => { const t = (a.n + b.n) || 1, pa = Math.round(a.n / t * 100); return { title, grad: (a.n + b.n) ? 'conic-gradient(' + ca + ' 0 ' + pa + '%, ' + cb + ' ' + pa + '% 100%)' : 'rgba(244,241,234,.12)', center: (a.n + b.n) ? pa + '%' : '-', legend: [{ label: a.label, n: a.n, color: ca, pct: (a.n + b.n) ? pa + '%' : '-' }, { label: b.label, n: b.n, color: cb, pct: (a.n + b.n) ? (100 - pa) + '%' : '-' }] }; };
+    const cnt = (f) => all.filter(f).length, uniq = {}; all.forEach((o) => { if (o.mode === 'sig' && o.sigName) uniq[o.sigName] = 1; });
+    const extraKpis = [{ label: 'Best day', value: bestKey !== null ? dt(bestKey).toLocaleDateString([], { month: 'short', day: 'numeric' }) : '-', sub: bestKey !== null ? perDay[bestKey] + ' sales' : 'No orders yet' }, { label: 'Peak hour', value: hasAny ? peakH + ':00' : '-', sub: hasAny ? hrs[peakH] + ' sales between ' + peakH + ':00 and ' + (peakH + 1) + ':00' : 'No orders yet' }, { label: 'Best weekday', value: hasAny ? wkN[peakW] : '-', sub: hasAny ? wk[peakW] + ' sales' : 'No orders yet' }, { label: 'Players sold', value: String(Object.keys(uniq).length), sub: 'Different signatures' }];
+    const selIds = Object.keys(s.selected).filter((id) => s.orders[id]), shownIds = shown.slice(0, 60).map((o) => o.id);
+    const bulkSet = (patch) => () => this.bulkApply((o) => Object.assign({}, o, patch));
+    return {
+      dayTitle: useRange ? 'Sales per day, ' + N + ' days' : 'Sales per day, last ' + N + ' days', rangeOpts: [14, 30, 60, 90].map((n) => ({ label: String(n), bg: on(N === n), fg: onF(N === n), pick: () => this.setState({ chartDays: n }) })),
+      dpFrom: s.dp.from, dpTo: s.dp.to, onDpFrom: (e) => { const v = e.target.value; this.setState((st) => ({ dp: Object.assign({}, st.dp, { from: v }) })); }, onDpTo: (e) => { const v = e.target.value; this.setState((st) => ({ dp: Object.assign({}, st.dp, { to: v }) })); },
+      dpPresets: (() => { const d0 = new Date(), ds = (d) => this.dstr(d), td = ds(d0), back = (n) => { const d = new Date(); d.setDate(d.getDate() - n); return ds(d); }; return [['All time', '', ''], ['Today', td, td], ['Last 7 days', back(6), td], ['Last 14 days', back(13), td], ['This month', ds(new Date(d0.getFullYear(), d0.getMonth(), 1)), td], ['Last month', ds(new Date(d0.getFullYear(), d0.getMonth() - 1, 1)), ds(new Date(d0.getFullYear(), d0.getMonth(), 0))]].map((p) => { const on1 = s.dp.from === p[1] && s.dp.to === p[2]; return { label: p[0], bg: on1 ? '#D6A64F' : 'transparent', fg: on1 ? '#1B1A17' : '#F4F1EA', line: on1 ? '#D6A64F' : 'rgba(244,241,234,.4)', pick: () => this.setState({ dp: { from: p[1], to: p[2] } }) }; }); })(),
+      dayBars: mk(dayArr, (i) => (i % lstep === 0 || i === N - 1 ? String(dayDate(i).getDate()) : ''), (i, n) => dayDate(i).toLocaleDateString([], { month: 'short', day: 'numeric' }) + ': ' + n + ' sales', dayArr.some((n) => n) ? argmax(dayArr) : -1),
+      hourBars: mk(hrs, (i) => (i % 3 === 0 ? String(i) : ''), (i, n) => i + ':00: ' + n + ' sales', hasAny ? peakH : -1),
+      wdBars: mk(wk, (i) => wkN[i], (i, n) => wkN[i] + ': ' + n + ' sales', hasAny ? peakW : -1),
+      donuts: [donut('Card type', { label: 'Team color', n: cnt((o) => o.cardType !== 'black') }, { label: 'Black', n: cnt((o) => o.cardType === 'black') }, gold, '#F4F1EA'), donut('Engraving', { label: 'Signature', n: sigN }, { label: 'Name', n: all.length - sigN }, gold, '#F4F1EA'), donut('Status', { label: 'Engraved', n: eng }, { label: 'Paid, waiting', n: all.length - eng }, gold, '#F4F1EA')],
+      fill10: () => this.fillDays(10), fill14: () => this.fillDays(14), fill30: () => this.fillDays(30), fill90: () => this.fillDays(90), genDate: s.gen.date, genCount: s.gen.count, genPrice: s.gen.price || '', genPricePh: A.price, onGenPrice: (e) => { const v = e.target.value; this.setState((st) => ({ gen: Object.assign({}, st.gen, { price: v }) })); }, genOrders: this.genOrders,
+      onGenDate: (e) => { const v = e.target.value; this.setState((st) => ({ gen: Object.assign({}, st.gen, { date: v }) })); },
+      onGenCount: (e) => { const v = e.target.value; this.setState((st) => ({ gen: Object.assign({}, st.gen, { count: v }) })); },
+      hasSel: selIds.length > 0, confirming: s.confirmDel, notConfirming: !s.confirmDel, askDelete: () => this.setState({ confirmDel: true }), cancelDelete: () => this.setState({ confirmDel: false }), selCount: selIds.length, clearSel: () => this.setState({ selected: {}, confirmDel: false }),
+      bulkEngraved: bulkSet({ status: 'engraved', engraved: Date.now() }), bulkPaid: bulkSet({ status: 'paid', engraved: null }), bulkColor: bulkSet({ cardType: 'color' }), bulkBlack: bulkSet({ cardType: 'black' }), bulkDelete: this.bulkDelete,
+      allChecked: shownIds.length > 0 && shownIds.every((id) => s.selected[id]),
+      onAll: () => this.setState((st) => { const sel = Object.assign({}, st.selected), all2 = shownIds.length > 0 && shownIds.every((id) => sel[id]); shownIds.forEach((id) => { if (all2) delete sel[id]; else sel[id] = true; }); return { selected: sel }; }),
+      storeBg: 'url(' + this.rs('uploads/steel-nba-store-v2.png') + ')', skyBg: 'url(' + this.rs('uploads/steel-skyline-full.png') + ')',
+      kpis: [{ label: 'Orders', value: String(all.length), sub: all.length ? (s.dp.from || s.dp.to ? (s.dp.from || '...') + ' to ' + (s.dp.to || '...') : 'All time') : 'No orders in this period' }, { label: 'Revenue', value: fmt(rev), sub: all.length ? 'Avg ' + fmt(rev / all.length) + ' per order' : '-' }, { label: 'Engraved', value: eng + ' / ' + all.length, sub: (all.length - eng) + ' waiting at the kiosk' }, { label: 'With signature', value: sigN ? Math.round(sigN / all.length * 100) + '%' : '0%', sub: sigN + ' of ' + all.length + ' orders' }].concat(extraKpis),
+      noSales: all.length === 0, noSigs: sigN === 0,
+      teamBars: tally((o) => o.teamName, (o) => '').map((b) => Object.assign(b, { csv: () => this.csvEntity('team', b.label) })), sigBars: tally((o) => (o.mode === 'sig' ? o.sigName : ''), (o) => o.teamName).map((b) => Object.assign(b, { csv: () => this.csvEntity('player', b.label) })),
+      typeFilters: [['all', 'All'], ['name', 'Name'], ['sig', 'Signature']].map((f) => ({ label: f[1], bg: on(sf.type === f[0]), fg: onF(sf.type === f[0]), pick: () => setSales({ type: f[0] }) })),
+      cardFilters: [['all', 'All'], ['color', 'Team color'], ['black', 'Black']].map((f) => ({ label: f[1], bg: on(sf.card === f[0]), fg: onF(sf.card === f[0]), pick: () => setSales({ card: f[0] }) })),
+      salesTeam: sf.team, salesTeamOpts: [{ v: 'all', l: 'All teams' }].concat(tOpts), onSalesTeam: (e) => setSales({ team: e.target.value }),
+      salesFrom: sf.from, salesTo: sf.to, onSalesFrom: (e) => setSales({ from: e.target.value }), onSalesTo: (e) => setSales({ to: e.target.value }),
+      resetFilters: () => setSales({ filter: 'all', q: '', type: 'all', card: 'all', team: 'all', from: '', to: '' }), exportCount: shown.length + ' rows',
+      colChips: [['id', 'Order'], ['date', 'Date'], ['team', 'Team'], ['type', 'Type'], ['sig', 'Player signature'], ['name', 'Name'], ['card', 'Card'], ['price', 'Price'], ['status', 'Status']].map((c) => ({ label: c[1], bg: on(s.expCols[c[0]]), fg: onF(s.expCols[c[0]]), pick: () => this.setState((st) => ({ expCols: Object.assign({}, st.expCols, { [c[0]]: st.expCols[c[0]] ? 0 : 1 }) })) })),
+      salesFilters: [['all', 'All'], ['paid', 'Paid'], ['engraved', 'Engraved']].map((f) => ({ label: f[1], bg: on(sf.filter === f[0]), fg: onF(sf.filter === f[0]), pick: () => setSales({ filter: f[0] }) })),
+      salesQ: sf.q, onSalesQ: (e) => setSales({ q: e.target.value }), noRows: shown.length === 0,
+      rows: shown.slice(0, 60).map((o) => ({ checked: !!s.selected[o.id], onCheck: () => this.setState((st) => { const sel = Object.assign({}, st.selected); if (sel[o.id]) delete sel[o.id]; else sel[o.id] = true; return { selected: sel }; }), id: o.id, date: dt(o.created).toLocaleDateString([], { month: 'short', day: 'numeric' }), time: dt(o.created).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), team: o.teamName, color: (T2[o.team] || { color: '#000' }).color, line: o.status === 'engraved' ? gold : 'rgba(244,241,234,.25)', engrave: o.mode === 'sig' ? o.sigName : '"' + (o.name || '-') + '"', kind: o.mode === 'sig' ? 'Signature' : 'Name', card: o.cardType === 'black' ? 'Black' : 'Team color', price: o.price, status: o.status === 'engraved' ? 'Engraved' : 'Paid', stBg: o.status === 'engraved' ? gold : 'transparent', stFg: o.status === 'engraved' ? dark : cream, toggleLabel: o.status === 'engraved' ? 'Reopen' : 'Mark engraved', toggle: () => this.toggleOrder(o.id), del: () => this.deleteOrder(o.id) })),
+      seedDemo: this.seedDemo, exportCsv: this.exportCsv,
+      tDk: Object.assign({ k: 'pct' }, (A.roy || {}).td).k, tDv: Object.assign({ v: '0' }, (A.roy || {}).td).v, tOnDk: (e) => this.setRoyDef('t', { k: e.target.value }), tOnDv: (e) => this.setRoyDef('t', { v: e.target.value }), tClearAll: () => this.clearAllRoy('t'),
+      pDk: Object.assign({ k: 'pct' }, (A.roy || {}).pd).k, pDv: Object.assign({ v: '0' }, (A.roy || {}).pd).v, pOnDk: (e) => this.setRoyDef('p', { k: e.target.value }), pOnDv: (e) => this.setRoyDef('p', { v: e.target.value }), pClearAll: () => this.clearAllRoy('p'),
+      pFrom: s.period.from, pTo: s.period.to, onFrom: (e) => this.setPeriod({ from: e.target.value }), onTo: (e) => this.setPeriod({ to: e.target.value }),
+      perThis: () => this.setState({ period: this.periodDefault() }),
+      perLast: () => { const d = new Date(); this.setState({ period: { from: this.dstr(new Date(d.getFullYear(), d.getMonth() - 1, 1)), to: this.dstr(new Date(d.getFullYear(), d.getMonth(), 0)) } }); },
+      per14: () => { const d = new Date(), f = new Date(); f.setDate(f.getDate() - 13); this.setState({ period: { from: this.dstr(f), to: this.dstr(d) } }); },
+      owedTeams: fmt(this.buildReport('team').list.reduce((t, e) => t + e.royalty, 0)), owedTeamsSub: this.buildReport('team').list.length + ' teams with engraved cards in this period',
+      owedPlayers: fmt(this.buildReport('player').list.reduce((t, e) => t + e.royalty, 0)), owedPlayersSub: this.buildReport('player').list.length + ' players with engraved cards in this period',
+      xTeams: () => this.xlsxReport('team'), xPlayers: () => this.xlsxReport('player'), 
+      expT: s.expT, expTOp: s.expT !== '' ? 1 : 0.4, onExpT: (e) => this.setState({ expT: e.target.value }), exportT: this.exportT,
+      expTOpts: [{ v: '', l: 'Choose a team' }].concat(T.map((t, i) => ({ v: String(i), l: t.name }))),
+      expP: s.expP, expPOp: s.expP !== '' ? 1 : 0.4, onExpP: (e) => this.setState({ expP: e.target.value }), exportP: this.exportP,
+      expPOpts: [{ v: '', l: 'Choose a player' }].concat(A.sigs.map((g) => ({ v: g.id, l: g.name }))),
+      c, isHome: scr === 'home', isWelcome: scr === 'welcome', isTeam: scr === 'team', isScan: scr === 'scan',
+      isCards: ['personalize', 'pay', 'qr', 'validate', 'engrave', 'admin'].includes(scr),
+      isPers: scr === 'personalize', isPay: scr === 'pay', isQr: scr === 'qr', isVal: scr === 'validate', isEngrave: scr === 'engrave', isAdmin: scr === 'admin',
+      brand: scr === 'home' ? 'CraftoBotics · NBA cards' : scr === 'sales' ? 'CraftoBotics · Admin' : kiosk ? 'CraftoBotics · Kiosk' : 'CraftoBotics · NBA Store',
+      showBack: ['welcome', 'team', 'personalize', 'pay', 'scan', 'validate'].includes(scr), showSteps: !['home', 'welcome', 'admin', 'sales', 'flow'].includes(scr) || (scr === 'admin' && idx >= 0 && false),
+      steps: stepsDef.map((x, i) => ({ label: (i + 1) + ' ' + x[1], bg: i === idx ? gold : 'rgba(244,241,234,.1)', fg: i === idx ? dark : cream })),
+      gearBg: scr === 'admin' ? gold : 'transparent', gearFg: scr === 'admin' ? dark : gold,
+      goHome: this.goHome, goSales: this.goSales, goStore: this.goStore, goKiosk: this.goKiosk, goBack: this.goBack, toggleAdmin: this.toggleAdmin, start: this.start,
+      wEyebrow: kiosk ? 'Kiosk · Live engraving' : 'NBA Store · Online order',
+      wSub: kiosk ? 'Scan the QR code from your order. Check it, then watch your card being engraved.' : 'Choose your team, personalize your metal card with your name or a player signature, then pay and get your QR code.',
+      heroLogos: [['knicks', '#006BB6'], ['bulls', '#CE1141'], ['celtics', '#007A33'], ['pacers', '#002D62'], ['miami-heat', '#CE1141'], ['brooklyn-nets', '#000000']].map((k) => ({ bgi: 'url(uploads/steel-' + k[0] + '.png)', bg: k[1] })),
+      sortColor: () => this.setState({ sortBy: 'color' }), sortName: () => this.setState({ sortBy: 'name' }), sortColorBg: s.sortBy === 'name' ? 'transparent' : gold, sortColorFg: s.sortBy === 'name' ? cream : dark, sortNameBg: s.sortBy === 'name' ? gold : 'transparent', sortNameFg: s.sortBy === 'name' ? dark : cream,
+      filters: ['All'].concat(this.FAMS).map((x) => ({ label: x, bg: on(s.filter === x), fg: onF(s.filter === x), pick: () => this.setState({ filter: x }) })),
+      teamTiles: T.map((t, i) => ({ name: t.name, bgi: 'url(' + t.logo + ')', color: t.color, fam: t.fam, pick: () => this.setState({ screen: 'personalize', team: i, sigId: null }), ord: s.sortBy === 'name' ? 0 : (t.def === 'New York Knicks' ? -1 : (this.FAMS.indexOf(t.fam) === 1 ? 0 : this.FAMS.indexOf(t.fam) === 0 ? 1 : this.FAMS.indexOf(t.fam)) * 1000 + i + 1) })).filter((t) => s.filter === 'All' || s.filter === t.fam).sort((a, b) => (s.sortBy === 'name' ? a.name.localeCompare(b.name) : a.ord - b.ord)),
+      teamName: team.name, famLabel: team.fam + ' family card', changeTeam: () => this.setState({ screen: 'team' }),
+      pickColor: () => this.setState({ cardType: 'color' }), pickBlack: () => this.setState({ cardType: 'black' }),
+      cColorBg: on(s.cardType === 'color'), cColorFg: onF(s.cardType === 'color'), cBlackBg: on(s.cardType === 'black'), cBlackFg: onF(s.cardType === 'black'),
+      pickName: () => this.setState({ mode: 'name' }),
+      pickSig: () => { const a = this.availSigs(s.team)[0]; this.setState({ mode: 'sig', sigId: s.sigId || (a ? a.id : null) }); },
+      mNameBg: on(s.mode === 'name'), mNameFg: onF(s.mode === 'name'), mSigBg: on(s.mode === 'sig'), mSigFg: onF(s.mode === 'sig'),
+      name: s.name, nameCount: s.name.length + ' / ' + this.maxChars(), maxChars: this.maxChars(), onName: (e) => this.setState({ name: e.target.value.slice(0, this.maxChars()) }),
+      sigOpts: this.sigOptList(s.team, s.sigId, (id) => this.setState({ sigId: id })),
+      goPay: this.goPay, goOpacity: this.canOrder() ? 1 : 0.4, priceLabel: this.priceLabel(),
+      cardLabel, engraveLabel,
+      payName: s.pay.name, payNum: s.pay.num, payExp: s.pay.exp, payCvc: s.pay.cvc,
+      onAdminPay: (e) => { const k = e.target.dataset.f, v = e.target.value; this.setAdmin((a) => ({ ...a, pay: Object.assign({}, a.pay, { [k]: v }) })); if (k !== 'note') this.setState((st) => ({ pay: Object.assign({}, st.pay, { [k]: v }) })); },
+      apName: A.pay.name, apNum: A.pay.num, apExp: A.pay.exp, apCvc: A.pay.cvc, apNote: A.pay.note, payNote: A.pay.note,
+      onPay: (e) => { const k = e.target.dataset.f, v = e.target.value; this.setState((st) => ({ pay: Object.assign({}, st.pay, { [k]: v }) })); },
+      pay: this.pay, payOpacity: s.paying ? 0.5 : 1, payLabel: s.paying ? 'Processing payment…' : 'Pay ' + this.priceLabel(),
+      orderId: s.order ? s.order.id : '', qrBgi: s.qr ? 'url(' + this.bu(s.qr) + ')' : 'none', qrHref: s.qr || '#', qrName: (s.order ? s.order.id : 'order') + '.png',
+      orderSummary: s.order ? s.order.teamName + ' · ' + (s.order.cardType === 'black' ? 'Black card' : 'Team color card') + ' · ' + (s.order.mode === 'sig' ? s.order.sigName : s.order.name) + ' · ' + s.order.price : '',
+      toKiosk: this.toKiosk, newOrder: this.newOrder,
+      scanText: s.scanText, onScan: this.onScan, onScanKey: this.onScanKey, refocus: this.refocus, scanGo: () => this.lookup(s.scanText),
+      scanErr: s.scanErr, hasScanErr: !!s.scanErr, noOrders: recent.length === 0,
+      recent: recent.map((o) => ({ id: o.id, team: o.teamName, when: new Date(o.created).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }), status: o.status, color: o.status === 'engraved' ? '#6b6759' : gold, load: () => this.lookup(o.id) })),
+      kId: s.kOrder ? s.kOrder.id : '',
+      kEditName: c.isName && s.kEdit, kEditSig: c.isSig && s.kEdit, toggleKEdit: this.toggleKEdit, kEditLabel: s.kEdit ? 'Done' : 'Edit', kEditBg: s.kEdit ? gold : 'transparent', kEditFg: s.kEdit ? dark : cream, kName: s.kName, kNameCount: s.kName.length + ' / ' + this.maxChars(), onKName: (e) => this.setState({ kName: e.target.value.slice(0, this.maxChars()) }),
+      kSigOpts: s.kOrder ? this.sigOptList(s.kOrder.team, s.kSigId, (id) => this.setState({ kSigId: id })) : [],
+      kOpacity: this.kOk() ? 1 : 0.4, confirmEngrave: this.confirmEngrave, cancelOrder: this.cancelOrder,
+      pct: s.progress, isDone: done, stepLabel: done ? 'Complete' : 'Step 3 · Engraving', headline: done ? 'Your card is ready' : 'Engraving your card',
+      sub: done ? 'Take your card from the tray. Enjoy.' : 'Stay close and watch the robot at work.', restartKiosk: this.restartKiosk,
+      adminTabs: tabs.map((t) => ({ label: t[1], bg: s.adminTab === t[0] ? 'rgba(214,166,79,.22)' : 'rgba(180,172,157,.08)', line: s.adminTab === t[0] ? gold : 'rgba(244,241,234,.2)', pick: () => this.setState({ adminTab: t[0] }) })),
+      tabGeneral: s.adminTab === 'general', tabCalib: s.adminTab === 'calib',
+      calBg: 'url(' + this.svgUrl(this.calSvg().svg) + ') center/100% 100% no-repeat', calAspect: (this.calSvg().W / this.calSvg().H).toFixed(4),
+      calInfo: 'PNG at 20 px/mm: ' + Math.round(this.calSvg().W * 20) + ' x ' + Math.round(this.calSvg().H * 20) + ' px. Black outline on white.',
+      calFields: [['w', 'Width', 20, 120, 0.5, 'mm'], ['h', 'Height', 20, 160, 0.5, 'mm'], ['r', 'Corner radius', 0, 20, 0.5, 'mm'], ['hole', 'Hole diameter', 0, 10, 0.5, 'mm'], ['holeY', 'Hole from top', 2, 30, 0.5, 'mm'], ['stroke', 'Line thickness', 0.1, 2, 0.05, 'mm']].map((f) => ({ label: f[1], min: f[2], max: f[3], step: f[4], val: s.cal[f[0]], shown: s.cal[f[0]] + ' ' + f[5], on: (e) => { const v = parseFloat(e.target.value); this.setState((st) => ({ cal: Object.assign({}, st.cal, { [f[0]]: v }) })); } })),
+      calCross: s.cal.cross, onCalCross: (e) => { const v = e.target.checked; this.setState((st) => ({ cal: Object.assign({}, st.cal, { cross: v }) })); }, calReset: () => this.setState({ cal: this.calDef() }),
+      navItemsGo: this.goItems, navSalesGo: this.goSales, navItemsLine: scr === 'admin' ? gold : 'transparent', navSalesLine: scr === 'sales' ? gold : 'transparent', navItemsBg: scr === 'admin' ? 'rgba(214,166,79,.14)' : 'transparent', navSalesBg: scr === 'sales' ? 'rgba(214,166,79,.14)' : 'transparent',
+      isSalesScreen: scr === 'sales', showSalesNav: false, isColors: scr === 'colors', goColors: this.goColors, colorsBg: scr === 'colors' ? gold : 'transparent', colorsFg: scr === 'colors' ? dark : gold,
+      colorFams: [['Blue', '0, 107, 182', 'Philadelphia 76ers'], ['Orange', '245, 132, 38', 'New York Knicks'], ['Red', '206, 17, 65', 'Chicago Bulls'], ['Purple', '85, 37, 131', 'Los Angeles Lakers'], ['Navy', '0, 45, 98', 'Indiana Pacers'], ['Green', '0, 122, 51', 'Boston Celtics'], ['Black', '0, 0, 0', 'Universal black']].map((f) => ({ name: f[0], hex: this.FAM[f[0]].c, rgb: f[1], ref: f[2], teams: T.filter((t) => t.fam === f[0]).map((t) => ({ name: t.name, bgi: t.logo ? 'url(' + this.bu(t.logo) + ')' : 'none' })) })),
+      isFlow: scr === 'flow', goFlow: this.goFlow, flowBg: scr === 'flow' ? gold : 'transparent', flowFg: scr === 'flow' ? dark : gold, dashBg: scr === 'sales' ? gold : 'transparent', dashFg: scr === 'sales' ? dark : gold, salesNavBg: scr === 'sales' ? gold : 'transparent', salesNavFg: scr === 'sales' ? dark : gold,
+      adminMax: '640px', cardsDisplay: 'flex', tabTeams: s.adminTab === 'teams', tabSigs: s.adminTab === 'sigs', tabLayout: s.adminTab === 'layout', tabQr: s.adminTab === 'qr', tabClean: s.adminTab === 'clean',
+      scFile: this.scFile, scClear: () => this.setState((st) => ({ sc: Object.assign({}, st.sc, { raw: null, url: null, msg: '', done: false }) })), scAdd: this.scAdd,
+      scHasRaw: !!s.sc.raw, scHas: !!s.sc.url, scRawBgi: s.sc.raw ? 'url(' + this.bu(s.sc.raw) + ')' : 'none', scUrlBgi: s.sc.url ? 'url(' + this.bu(s.sc.url) + ')' : 'none',
+      scCut: s.sc.cut, scCutLabel: s.sc.cut + '%', onScCut: (e) => { const v = parseInt(e.target.value, 10); if (!isNaN(v) && s.sc.raw) this.scProcess(s.sc.raw, v); },
+      scName: s.sc.name, onScName: (e) => { const v = e.target.value; this.setState((st) => ({ sc: Object.assign({}, st.sc, { name: v, done: false }) })); },
+      scTeam: s.sc.team, scTeamOpts: [{ v: 'all', l: 'All teams' }].concat(tOpts), onScTeam: (e) => { const v = e.target.value; this.setState((st) => ({ sc: Object.assign({}, st.sc, { team: v }) })); },
+      scMsg: s.sc.msg, hasScMsg: !!s.sc.msg, scHref: s.sc.url || '#', scDl: (s.sc.name.trim() || 'signature').replace(/[^A-Za-z0-9]+/g, '-').toLowerCase() + '.png', scDone: s.sc.done, scDoneMsg: s.sc.doneMsg,
+      scIsNew: s.sc.mode !== 'edit', scIsEdit: s.sc.mode === 'edit', scNewBg: s.sc.mode !== 'edit' ? gold : 'transparent', scNewFg: s.sc.mode !== 'edit' ? dark : cream, scEditBg: s.sc.mode === 'edit' ? gold : 'transparent', scEditFg: s.sc.mode === 'edit' ? dark : cream,
+      scModeNew: () => this.setState((st) => ({ sc: Object.assign({}, st.sc, { mode: 'new', done: false }) })), scModeEdit: () => this.setState((st) => ({ sc: Object.assign({}, st.sc, { mode: 'edit', done: false }) })),
+      scPid: s.sc.pid, scSave: this.scSave, scSaveOp: s.sc.pid === '' ? 0.4 : 1,
+      scPlayerOpts: [{ v: '', l: 'Choose a player' }].concat(A.sigs.map((g, i) => ({ v: String(i), l: g.name + ' · ' + (g.team === 'all' ? 'All teams' : ((T[g.team] || {}).name || '')) }))),
+      onScPid: (e) => { const v = e.target.value, g = A.sigs[parseInt(v, 10)]; this.setState((st) => ({ sc: Object.assign({}, st.sc, { pid: v, name: g ? g.name : st.sc.name, team: g ? String(g.team) : st.sc.team, done: false }) })); },
+      qtText: s.qt.text, onQtText: (e) => this.qtSet(e.target.value), qtNew: () => this.qtSet(this.newId()),
+      qtLatest: () => { const o = Object.values(s.orders).sort((a, b) => b.created - a.created)[0]; this.qtSet(o ? o.id : ''); },
+      qtHas: !!s.qt.img, qtBgi: s.qt.img ? 'url(' + this.bu(s.qt.img) + ')' : 'none', qtHref: s.qt.img || '#',
+      qtShown: s.qt.text.trim().toUpperCase(), qtName: (s.qt.text.trim().toUpperCase() || 'order') + '.png',
+      qtNote: /^NBA-[A-Z0-9]{6}$/.test(s.qt.text.trim().toUpperCase()) ? 'Valid order number format. The kiosk finds it if the order exists in this browser.' : 'Not the standard NBA-XXXXXX format. The code still encodes exactly what you typed.',
+      pvTeam: String(s.pv.team), pvTeamOpts: tOpts, onPvTeam: (e) => this.setState((st) => ({ pv: Object.assign({}, st.pv, { team: parseInt(e.target.value, 10) }) })),
+      pvColor: () => this.setState((st) => ({ pv: Object.assign({}, st.pv, { cardType: 'color' }) })), pvBlack: () => this.setState((st) => ({ pv: Object.assign({}, st.pv, { cardType: 'black' }) })),
+      pvName: () => this.setState((st) => ({ pv: Object.assign({}, st.pv, { mode: 'name' }) })),
+      pvSig: () => this.setState((st) => ({ pv: Object.assign({}, st.pv, { mode: 'sig' }) })),
+      pvColorBg: pvTog('cardType', 'color').bg, pvColorFg: pvTog('cardType', 'color').fg, pvBlackBg: pvTog('cardType', 'black').bg, pvBlackFg: pvTog('cardType', 'black').fg,
+      pvNameBg: pvTog('mode', 'name').bg, pvNameFg: pvTog('mode', 'name').fg, pvSigBg: pvTog('mode', 'sig').bg, pvSigFg: pvTog('mode', 'sig').fg,
+      currency: A.currency, price: A.price,
+      onCurrency: (e) => this.setAdmin((a) => ({ ...a, currency: e.target.value })), onPrice: (e) => this.setAdmin((a) => ({ ...a, price: e.target.value })),
+      orderCount: Object.keys(s.orders).length,
+      clearOrders: () => { this.saveO({}); this.setState({ orders: {} }); },
+      resetAll: () => { const d = this.defAdmin(); this.saveA(d); this.setState({ admin: d, pay: Object.assign({}, d.pay) }); },
+      teamRows: T.map((t, i) => ({ rop: this.roy('t', String(i)).own ? 1 : 0.55, clrDisp: this.roy('t', String(i)).own ? 'block' : 'none', onClr: () => this.clearRoy('t', String(i)), rk: this.roy('t', String(i)).k, rv: this.roy('t', String(i)).v, onRK: (e) => this.setRoy('t', String(i), { k: e.target.value }), onRV: (e) => this.setRoy('t', String(i), { v: e.target.value }), bgi: 'url(' + t.logo + ')', bg: t.color === '#000000' ? '#6b6759' : t.color, fam: t.fam, value: (A.names[i] !== undefined ? A.names[i] : t.def), onInput: (e) => { const v = e.target.value; this.setAdmin((a) => ({ ...a, names: Object.assign({}, a.names, { [i]: v }) })); } })),
+      sigRows: A.sigs.map((g, i) => ({ rop: this.roy('p', g.id).own ? 1 : 0.55, clrDisp: this.roy('p', g.id).own ? 'block' : 'none', onClr: () => this.clearRoy('p', g.id), rk: this.roy('p', g.id).k, rv: this.roy('p', g.id).v, onRK: (e) => this.setRoy('p', g.id, { k: e.target.value }), onRV: (e) => this.setRoy('p', g.id, { v: e.target.value }), _t: String(g.team), dl: g.src ? this.bu(g.src) : '#', dlName: (g.name || 'signature').replace(/[^A-Za-z0-9]+/g, '-').toLowerCase() + '.png', line: s.overSig === i && s.dragSig !== i ? gold : 'rgba(214,166,79,.5)', op: s.dragSig === i ? 0.4 : 1,
+        onDragStart: (e) => { this._dragI = i; e.dataTransfer.effectAllowed = 'move'; e.dataTransfer.setData('text/plain', String(i)); const row = e.currentTarget.closest('[data-sigrow]'); if (row) e.dataTransfer.setDragImage(row, 24, 24); this.setState({ dragSig: i }); },
+        onDragOver: (e) => { e.preventDefault(); if (this.state.overSig !== i) this.setState({ overSig: i }); },
+        onDrop: (e) => { e.preventDefault(); const from = this._dragI; this._dragI = null; this.setState({ dragSig: null, overSig: null }); if (from == null || from === i) return; this.setAdmin((a) => { const arr = a.sigs.slice(); const m = arr.splice(from, 1)[0]; arr.splice(i, 0, m); return { ...a, sigs: arr }; }); },
+        onDragEnd: () => { this._dragI = null; this.setState({ dragSig: null, overSig: null }); }, bgi: g.src ? 'url(' + this.bu(g.src) + ')' : 'none', name: g.name, team: String(g.team), opts: [{ v: 'all', l: 'All teams' }].concat(tOpts),
+        onName: (e) => { const v = e.target.value; this.setAdmin((a) => ({ ...a, sigs: a.sigs.map((x, k) => (k === i ? { ...x, name: v } : x)) })); },
+        onTeam: (e) => { const v = e.target.value; this.setAdmin((a) => ({ ...a, sigs: a.sigs.map((x, k) => (k === i ? { ...x, team: v } : x)) })); },
+        onFile: (e) => this.uploadSig(i, e), onDel: () => this.setAdmin((a) => ({ ...a, sigs: a.sigs.filter((x, k) => k !== i) })) })).filter((r) => s.sigFilter === 'all' || r._t === s.sigFilter),
+      addSig: () => this.setAdmin((a) => ({ ...a, sigs: a.sigs.concat([{ id: 'c' + Date.now(), name: 'New signature', team: s.sigFilter !== 'all' ? parseInt(s.sigFilter, 10) : 'all', src: null, ar: 2.4 }]) })),
+      sigFilter: s.sigFilter, sigFilterOpts: [{ v: 'all', l: 'All teams' }].concat(tOpts), onSigFilter: (e) => this.setState({ sigFilter: e.target.value }),
+      sliders: this.LBL.map((x) => { const o = L[x[0]]; return { label: x[1], vlabel: o.v + x[2], v: o.v, min: o.min, max: o.max, onV: (e) => this.setLayout(x[0], 'v', e.target.value), onMin: (e) => this.setLayout(x[0], 'min', e.target.value), onMax: (e) => this.setLayout(x[0], 'max', e.target.value) }; }),
+      resetLayout: () => this.setAdmin((a) => ({ ...a, layout: JSON.parse(JSON.stringify(this.DEF)) }))
+    };
+  }
+}
+</script>
+
+
+</body></html>
