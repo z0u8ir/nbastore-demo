@@ -4,9 +4,7 @@ Interactive demo of the CraftoBotics personalized card experience: a customer de
 
 **Live demo:** https://z0u8ir.github.io/nbastore-demo/
 
- 
-
-## How it works
+ ## How it works
 
 ![How it works](image.png)
 
